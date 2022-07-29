@@ -14,7 +14,6 @@ enum CampainEndPointApi {
 }
 
 extension CampainEndPointApi: EndPointType {
-  
   var baseURL: URL {
     return Configuration.baseURL
   }

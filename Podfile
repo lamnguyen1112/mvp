@@ -14,5 +14,6 @@ target 'MVPTemplateProject' do
   pod 'Kingfisher'
   pod 'R.swift'
   pod "DBDebugToolkit", :configurations => ['Dev', 'Staging']
+  pod ''
 
 end

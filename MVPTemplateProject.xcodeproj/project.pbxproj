@@ -205,9 +205,7 @@
 			children = (
 				D7BA3C6A239121BB00D7854B /* AppDelegate.swift */,
 				DE63CAC5289451FA001BEAF1 /* Domain */,
-				D7BA3C7E239121CA00D7854B /* Services */,
-				D7C6C70F2394C740009E25EA /* View */,
-				D7BA3C8C2391239500D7854B /* Controller */,
+				DE63CAC728945F45001BEAF1 /* Modules */,
 				D7BA3C822391222100D7854B /* Common */,
 				DE63CAC6289452BB001BEAF1 /* Libraries */,
 				DE63CABF28944C8B001BEAF1 /* Resources */,
@@ -241,6 +239,7 @@
 		D7BA3C822391222100D7854B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D7C6C6FB2394A6BC009E25EA /* Base */,
 				D7BA3C7F239121D400D7854B /* Extension */,
 				D7BA3C832391223800D7854B /* Global.swift */,
 				D7C6C7262394E3D3009E25EA /* Ultilities.swift */,
@@ -250,18 +249,11 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		D7BA3C8C2391239500D7854B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6C6FB2394A6BC009E25EA /* Base */,
-				D7C6C6FA2394A6B0009E25EA /* Main */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		D7C6C6FA2394A6B0009E25EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D7BA3C70239121BB00D7854B /* Main.storyboard */,
+				DE63CAC828945FC0001BEAF1 /* Views */,
 				D7C6C7092394C594009E25EA /* MainContainer.swift */,
 				D7C6C70A2394C594009E25EA /* MainViewController.swift */,
 				D7C6C70B2394C594009E25EA /* MainPresenter.swift */,
@@ -277,24 +269,6 @@
 				D7C6C6FC2394A6D3009E25EA /* BaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		D7C6C70F2394C740009E25EA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6C7352394F5C6009E25EA /* Cells */,
-				D7C6C7102394C754009E25EA /* Storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D7C6C7102394C754009E25EA /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				D7BA3C70239121BB00D7854B /* Main.storyboard */,
-				D7BA3C75239121BC00D7854B /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		D7C6C7172394E32B009E25EA /* ClientAPI */ = {
@@ -335,28 +309,13 @@
 			path = EndPoint;
 			sourceTree = "<group>";
 		};
-		D7C6C7352394F5C6009E25EA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6C7362394F5D2009E25EA /* Main */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		D7C6C7362394F5D2009E25EA /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6C7372394F5F7009E25EA /* TitleTableViewCell.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		DE63CABF28944C8B001BEAF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				DE63CAC328944ED8001BEAF1 /* R.generated.swift */,
 				D7BA3C73239121BC00D7854B /* Assets.xcassets */,
 				DE63CAC028944CBA001BEAF1 /* Localizable.strings */,
+				D7BA3C75239121BC00D7854B /* LaunchScreen.storyboard */,
 				06769C052488FE7B00A43D99 /* Configures */,
 			);
 			path = Resources;
@@ -365,6 +324,7 @@
 		DE63CAC5289451FA001BEAF1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D7BA3C7E239121CA00D7854B /* Services */,
 				D7C6C7282394E452009E25EA /* Model */,
 			);
 			path = Domain;
@@ -375,6 +335,22 @@
 			children = (
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DE63CAC728945F45001BEAF1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6C6FA2394A6B0009E25EA /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE63CAC828945FC0001BEAF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6C7372394F5F7009E25EA /* TitleTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
