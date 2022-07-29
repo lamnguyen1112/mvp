@@ -13,5 +13,6 @@ target 'MVPTemplateProject' do
   pod 'SVProgressHUD', '~> 2.2'
   pod 'Kingfisher'
   pod 'R.swift'
+  pod "DBDebugToolkit", :configurations => ['Dev', 'Staging']
 
 end

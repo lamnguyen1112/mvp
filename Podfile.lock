@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - DBDebugToolkit (0.9.0)
   - Kingfisher (5.10.1):
     - Kingfisher/Core (= 5.10.1)
   - Kingfisher/Core (5.10.1)
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - DBDebugToolkit
   - Kingfisher
   - R.swift
   - SVProgressHUD (~> 2.2)
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DBDebugToolkit
     - Kingfisher
     - R.swift
     - R.swift.Library
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  DBDebugToolkit: 41663a36673c919dfe665003f159ea5621aee0db
   Kingfisher: eb36b7dfcc78d60877051c92c119a2865972961a
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
 
-PODFILE CHECKSUM: ab039a6c3e9e0fa63c4419df17c67c51a08ce66f
+PODFILE CHECKSUM: 7e11a4f2d6ba90b95460ecb7b210acfa0a57e241
 
 COCOAPODS: 1.11.2

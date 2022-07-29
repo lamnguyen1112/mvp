@@ -206,7 +206,6 @@
 				D7BA3C6A239121BB00D7854B /* AppDelegate.swift */,
 				DE63CAC5289451FA001BEAF1 /* Domain */,
 				D7BA3C7E239121CA00D7854B /* Services */,
-				D7BA3C8B2391238D00D7854B /* Model */,
 				D7C6C70F2394C740009E25EA /* View */,
 				D7BA3C8C2391239500D7854B /* Controller */,
 				D7BA3C822391222100D7854B /* Common */,
@@ -249,13 +248,6 @@
 				D7C6C6FE2394AA71009E25EA /* AppStoryBoard.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		D7BA3C8B2391238D00D7854B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		D7BA3C8C2391239500D7854B /* Controller */ = {

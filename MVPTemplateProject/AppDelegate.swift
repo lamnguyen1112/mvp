@@ -7,22 +7,35 @@
 //
 
 import UIKit
+#if !(APPSTORE)
+  import DBDebugToolkit
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  
   internal var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    window = UIWindow(frame: UIScreen.main.bounds)
-    let mainViewController = MainContainer.resolveViewController()
-    window?.rootViewController = mainViewController
-    print(Configuration.baseURL)
-    window?.makeKeyAndVisible()
+    setupDBToolKit()
+    setupWindow()
     
     return true
   }
   
+  private func setupWindow() {
+    window = UIWindow(frame: UIScreen.main.bounds)
+    let mainViewController = MainContainer.resolveViewController()
+    window?.rootViewController = mainViewController
+    window?.makeKeyAndVisible()
+  }
+  
 }
 
+extension AppDelegate {
+  private func setupDBToolKit() {
+    #if !(APPSTORE)
+      DBDebugToolkit.setup()
+    #endif
+  }
+}
