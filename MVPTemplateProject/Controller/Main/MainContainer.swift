@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class MainContainer {
   static func resolveViewController() -> MainViewController {
     let viewcontroller = MainViewController.instantiateFromAppStoryboard(appStoryboard: .main)

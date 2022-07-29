@@ -36,7 +36,7 @@ extension CampainEndPointApi: EndPointType {
   
   var params: HTTPParameter? {
     switch self {
-    case .campain(let limit, let lastKey):
+    case .campain( _, _):
       return nil
     }
     

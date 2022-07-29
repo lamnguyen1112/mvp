@@ -38,7 +38,11 @@ excluded:
   - Carthage
   - Pods
   - fastlane
-  - "MVPTemplateProject/Common/Extensions"
+  - "MVPTemplateProject/Common"
+  - "MVPTemplateProject/Common/Extension/UIKit/"
+  - "MVPTemplateProject/Common/Extension/Foundation"
+  - "MVPTemplateProject/Common/Extension/Protocols"
+  - "MVPTemplateProject/Services/ClientAPI"
   - "MVPTemplateProject/Resources/R.generated.swift"
 nesting:
   type_level: 3

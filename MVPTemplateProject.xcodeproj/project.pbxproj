@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -204,11 +204,13 @@
 			isa = PBXGroup;
 			children = (
 				D7BA3C6A239121BB00D7854B /* AppDelegate.swift */,
-				D7BA3C822391222100D7854B /* Common */,
+				DE63CAC5289451FA001BEAF1 /* Domain */,
 				D7BA3C7E239121CA00D7854B /* Services */,
 				D7BA3C8B2391238D00D7854B /* Model */,
 				D7C6C70F2394C740009E25EA /* View */,
 				D7BA3C8C2391239500D7854B /* Controller */,
+				D7BA3C822391222100D7854B /* Common */,
+				DE63CAC6289452BB001BEAF1 /* Libraries */,
 				DE63CABF28944C8B001BEAF1 /* Resources */,
 				D7BA3C78239121BC00D7854B /* Info.plist */,
 			);
@@ -221,9 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				D7C6C72E2394EA91009E25EA /* EndPoint */,
-				D7C6C7282394E452009E25EA /* Model */,
 				D7C6C72B2394E9F3009E25EA /* APIManagers */,
-				D7C6C7172394E32B009E25EA /* APIService */,
+				D7C6C7172394E32B009E25EA /* ClientAPI */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,7 +305,7 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		D7C6C7172394E32B009E25EA /* APIService */ = {
+		D7C6C7172394E32B009E25EA /* ClientAPI */ = {
 			isa = PBXGroup;
 			children = (
 				D7C6C7182394E32B009E25EA /* ApiHeader.swift */,
@@ -314,7 +315,7 @@
 				D7C6C71C2394E32B009E25EA /* EndPointType.swift */,
 				D7C6C71D2394E32B009E25EA /* Configuration.swift */,
 			);
-			path = APIService;
+			path = ClientAPI;
 			sourceTree = "<group>";
 		};
 		D7C6C7282394E452009E25EA /* Model */ = {
@@ -369,6 +370,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DE63CAC5289451FA001BEAF1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6C7282394E452009E25EA /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DE63CAC6289452BB001BEAF1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,7 +398,7 @@
 				D7BA3C64239121BB00D7854B /* Frameworks */,
 				D7BA3C65239121BB00D7854B /* Resources */,
 				1994229E17C48D7B4A5768E1 /* [CP] Embed Pods Frameworks */,
-				D7C6C7022394AC7C009E25EA /* ShellScript */,
+				D7C6C7022394AC7C009E25EA /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -480,7 +496,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7C6C7022394AC7C009E25EA /* ShellScript */ = {
+		D7C6C7022394AC7C009E25EA /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,6 +505,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -499,6 +516,7 @@
 		};
 		DE63CAC228944D21001BEAF1 /* R.Swift */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

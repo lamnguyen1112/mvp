@@ -85,5 +85,5 @@ public extension TimeZone {
     self.init(secondsFromGMT: hoursFromGMT * 3600)
   }
   
-  public static var jp: TimeZone = TimeZone(hoursFromGMT: 9) ?? TimeZone.current
+  static var jp: TimeZone = TimeZone(hoursFromGMT: 9) ?? TimeZone.current
 }

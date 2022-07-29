@@ -10,17 +10,17 @@ import UIKit
 
 // UITableView + Reusable cell
 extension UITableView {
-  func register<T: UITableViewCell>(_: T.Type) where T: ReusableView {
+  func register<T: UITableViewCell>(_: T.Type) {
     register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
   }
   
-  func register<T: UITableViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
+  func register<T: UITableViewCell>(_: T.Type) where T: NibLoadableView {
     let bundle = Bundle(for: T.self)
     let nib = UINib(nibName: T.nibName, bundle: bundle)
     register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
   }
   
-  func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView, T: NibLoadableView {
+  func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: NibLoadableView {
     register(T.self)
     guard let cell = dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
       fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
@@ -28,7 +28,7 @@ extension UITableView {
     return cell
   }
   
-  func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
+  func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
     register(T.self)
     guard let cell = dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
       fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
@@ -36,13 +36,13 @@ extension UITableView {
     return cell
   }
   
-  func registerReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableView, T: NibLoadableView {
+  func registerReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) where T: NibLoadableView {
     let bundle = Bundle(for: T.self)
     let nib = UINib(nibName: T.nibName, bundle: bundle)
     register(nib, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
   }
   
-  func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T where T: ReusableView {
+  func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T {
     register(T.self, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
     guard let cell = dequeueReusableHeaderFooterView(withIdentifier: T.defaultReuseIdentifier) as? T else {
       fatalError("Could not dequeue Reusable HeaderFooterView with identifier: \(T.defaultReuseIdentifier)")
