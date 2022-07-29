@@ -9,11 +9,11 @@
 import Foundation
 import Alamofire
 
-enum CampainEndPointApi {
+enum CampainEndPoint {
   case campain(limit: Int, lastKey: String)
 }
 
-extension CampainEndPointApi: EndPointType {
+extension CampainEndPoint: EndPointType {
   var baseURL: URL {
     return Configuration.baseURL
   }

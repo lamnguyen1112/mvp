@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct APIManager {
-  
+struct CampainService {
   func campain(_ limit: Int,
                lastKey: String,
                completion: @escaping (_ obj: CampaignModel?, _ error: Error?) -> ()) {
     let router = Router<[CampaignInfo]>()
-    let campainAPI = CampainEndPointApi.campain(limit: limit, lastKey: lastKey)
+    let campainAPI = CampainEndPoint.campain(limit: limit, lastKey: lastKey)
     router.request(campainAPI) { (responseObj, error, status) in
       completion(responseObj, error)
     }
