@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias CampaignModel = BaseModel<[CampaignInfo]>
-
 struct CampaignInfo: Decodable {
   var id: Int?
   var campaignName: String?

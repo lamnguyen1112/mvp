@@ -12,10 +12,14 @@ struct UserService {
   func getUsers() {
     let router = Router<[User]>()
     let userEndPoint = UserEndPoint.users
-    router.request(userEndPoint) { (responseObj, error, status) in
-//      completion(responseObj, error)
-//      print("test response object", responseObj!)
-      print(error?.localizedDescription)
+    
+    router.request(userEndPoint) { response, error, status in
+      print(status)
+      if status == .success {
+        if let users = response?.data {
+          print(users)
+        }
+      }
     }
   }
 }

@@ -11,17 +11,17 @@ import Foundation
 protocol CampainServiceProtocol {
   func campain(_ limit: Int,
                lastKey: String,
-               completion: @escaping (_ obj: CampaignModel?, _ error: Error?) -> ())
+               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> ())
 }
 
 struct CampainService: CampainServiceProtocol {
   func campain(_ limit: Int,
                lastKey: String,
-               completion: @escaping (_ obj: CampaignModel?, _ error: Error?) -> ()) {
+               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> ()) {
     let router = Router<[CampaignInfo]>()
     let campainAPI = CampainEndPoint.campain(limit: limit, lastKey: lastKey)
     router.request(campainAPI) { (responseObj, error, status) in
-      completion(responseObj, error)
+      completion(responseObj?.data, error)
     }
   }
 }
