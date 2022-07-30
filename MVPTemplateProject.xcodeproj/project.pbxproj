@@ -287,19 +287,18 @@
 				D7C6C71A2394E32B009E25EA /* Connectivity.swift */,
 				D7C6C71B2394E32B009E25EA /* NetworkLogger.swift */,
 				D7C6C71C2394E32B009E25EA /* EndPointType.swift */,
-				D7C6C71D2394E32B009E25EA /* Configuration.swift */,
 			);
 			path = clientAPI;
 			sourceTree = "<group>";
 		};
-		D7C6C7282394E452009E25EA /* Model */ = {
+		D7C6C7282394E452009E25EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				DE3B226428953E0E00B4DF1F /* user */,
 				DE3B22602894E6EA00B4DF1F /* campain */,
 				D7C6C7292394E465009E25EA /* BaseModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DE3B22602894E6EA00B4DF1F /* campain */ = {
@@ -330,6 +329,7 @@
 		DE63CABF28944C8B001BEAF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D7C6C71D2394E32B009E25EA /* Configuration.swift */,
 				DE63CAC328944ED8001BEAF1 /* R.generated.swift */,
 				D7BA3C73239121BC00D7854B /* Assets.xcassets */,
 				DE63CAC028944CBA001BEAF1 /* Localizable.strings */,
@@ -343,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				D7BA3C7E239121CA00D7854B /* Services */,
-				D7C6C7282394E452009E25EA /* Model */,
+				D7C6C7282394E452009E25EA /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";

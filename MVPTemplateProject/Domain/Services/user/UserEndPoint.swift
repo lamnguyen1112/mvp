@@ -15,7 +15,7 @@ enum UserEndPoint {
 
 extension UserEndPoint: EndPointType {
   var baseURL: URL {
-    return URL(string: "http://demo5237716.mockable.io/") ?? Configuration.baseURL
+    return Configuration.baseURL
   }
   
   var path: String {

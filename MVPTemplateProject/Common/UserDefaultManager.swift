@@ -14,6 +14,7 @@ enum UserDefaultKey: String {
   case refreshToken = "REFRESH_TOKEN"
   case createRequestMaintain = "CREATE_REQUEST_MAINTAIN"
   case uuid = "UUID"
+  case isUsingMock = "IS_USING_MOCK"
 }
 
 class UserDefaultManager: NSObject {
@@ -67,4 +68,8 @@ class UserDefaultManager: NSObject {
   func delete(_ type: UserDefaultKey) {
     UserDefaults.standard.removeObject(forKey: type.rawValue)
   }
+}
+
+extension UserDefaultManager {
+  
 }

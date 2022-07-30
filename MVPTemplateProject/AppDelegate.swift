@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    setupDBToolKit()
     setupWindow()
+    setupDBToolKit()
     
     return true
   }
@@ -34,7 +34,21 @@ extension AppDelegate {
   
   private func setupDBToolKit() {
     #if !(APPSTORE)
-      DBDebugToolkit.setup()
+    DBDebugToolkit.setup()
+    DBDebugToolkit.setupCrashReporting()
+    
+    let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
+    let valUseMock = DBCustomVariable(name: "Using mock", value: isUsingMock)
+    valUseMock.addTarget(self, action: #selector(changeUsingMockConfig))
+    DBDebugToolkit.add(valUseMock)
+    
+    #endif
+  }
+  
+  @objc private func changeUsingMockConfig() {
+    #if !(APPSTORE)
+    let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
+    UserDefaults.standard.set(!isUsingMock, forKey: UserDefaultKey.isUsingMock.rawValue)
     #endif
   }
 }
