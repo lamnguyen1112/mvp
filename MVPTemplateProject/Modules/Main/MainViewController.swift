@@ -9,22 +9,23 @@
 import UIKit
 
 protocol MainProtocol: BaseView {
-  
+  func requestError(_ msg: String, titleAlert: String?)
+  func reloadListUser(_ users: [User]?)
 }
 
-class MainViewController: BaseViewController, MainProtocol {
-  // MARK: -- Protocol
-  func requestError(_ msg: String, titleAlert: String?) {
-    
-  }
+class MainViewController: BaseViewController {
   
   // MARK: - Outlets
   @IBOutlet private weak var tableView: UITableView!
   
   // MARK: - Properties
   var presenter: MainPresenter?
+  var users: [User]?
+  
+  // MARK: - Define
   private enum MainViewControllerSection: Int, CaseIterable {
     case titleSection
+    case users
   }
   
   override func viewDidLoad() {
@@ -32,9 +33,12 @@ class MainViewController: BaseViewController, MainProtocol {
     setupUI()
     presenter?.getUsers()
   }
-  
-  // MARK: - Setup
+}
+
+// MARK: - Setup
+extension MainViewController {
   private func setupUI() {
+    title = "Users"
     view.backgroundColor = .white
     configureTableView()
   }
@@ -46,7 +50,6 @@ class MainViewController: BaseViewController, MainProtocol {
     tableView.separatorColor = .clear
     tableView.showsVerticalScrollIndicator = false
   }
-  
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
@@ -59,8 +62,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     guard let type = MainViewControllerSection(rawValue: section) else { return 0 }
     
     switch type {
+    case .titleSection:
+      return 0
     default:
-      return 10
+      return users?.count ?? 0
     }
   }
   
@@ -72,6 +77,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     switch type {
     case .titleSection:
       return configureTitleSection(tableView, indexPath: indexPath)
+    case .users:
+      return configureUserSection(tableView, indexPath: indexPath)
     }
   }
 }
@@ -86,4 +93,28 @@ extension MainViewController {
     
     return cell
   }
+  
+  func configureUserSection(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.defaultReuseIdentifier, for: indexPath) as? UserTableViewCell else {
+      return UITableViewCell()
+    }
+    cell.selectionStyle = .none
+    let user = users?[indexPath.row]
+    cell.setUser(user)
+    
+    return cell
+  }
+}
+
+// MARK: -- Protocol
+extension MainViewController: MainProtocol {
+  func requestError(_ msg: String, titleAlert: String?) {
+    
+  }
+  
+  func reloadListUser(_ users: [User]?) {
+    self.users = users
+    self.tableView.reloadData()
+  }
+
 }

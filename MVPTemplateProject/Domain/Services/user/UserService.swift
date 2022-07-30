@@ -9,17 +9,23 @@
 import Foundation
 
 struct UserService {
-  func getUsers() {
+  func getUsers(completion: @escaping (_ users: [User]?, _ error: Error?) -> ()) {
     let router = Router<[User]>()
     let userEndPoint = UserEndPoint.users
     
     router.request(userEndPoint) { response, error, status in
-      print(status)
-      if status == .success {
-        if let users = response?.data {
-          print(users)
-        }
-      }
+      completion(response?.data, error)
     }
+  }
+  
+  func getUsers() async -> ([User]?, Error?) {
+    let router = Router<[User]>()
+    let userEndPoint = UserEndPoint.users
+    
+    return await withCheckedContinuation({ continuation in
+      router.request(userEndPoint) { response, error, status in
+        continuation.resume(returning: (response?.data, error))
+      }
+    })
   }
 }

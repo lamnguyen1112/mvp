@@ -19,7 +19,19 @@ class MainPresenter: MainPresenterProtocol {
   private let userService = UserService()
   
   func getUsers() {
-    userService.getUsers()
+//    old version
+//    userService.getUsers(completion: { users, error in
+//      self.viewController?.reloadListUser(users)
+//    })
+    
+//    new version
+    Task {
+      let (users, _) = await userService.getUsers()
+      
+      await MainActor.run(body: {
+        self.viewController?.reloadListUser(users)
+      })
+    }
   }
   
 }

@@ -9,3 +9,6 @@ https://malcolmkmd.medium.com/writing-network-layer-in-swift-protocol-oriented-a
 
 ### Json editor online
 https://jsoneditoronline.org/
+
+### MVP
+https://saad-eloulladi.medium.com/ios-swift-mvp-architecture-pattern-a2b0c2d310a3
