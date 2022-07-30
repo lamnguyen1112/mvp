@@ -1,5 +1,5 @@
 //
-//  ApiHeader.swift
+//  APIHeader.swift
 //  MVPTemplateProject
 //
 //  Created by Do Tran on 10/15/19.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class ApiHeader {
+class APIHeader {
   
   static func normalHeader() -> HTTPHeaders {
     return HTTPHeaders(["version": "\(Ultilities.appVersion())"])

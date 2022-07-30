@@ -16,4 +16,10 @@ class MainPresenter: MainPresenterProtocol {
   
   weak var viewController: MainProtocol?
   
+  private let userService = UserService()
+  
+  func getUsers() {
+    userService.getUsers()
+  }
+  
 }

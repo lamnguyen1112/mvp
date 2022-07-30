@@ -49,7 +49,7 @@ class Router<T: Decodable> {
                method: route.httpMethod,
                parameters: parameters ?? nil,
                encoding: paramType == .body ? JSONEncoding.default : URLEncoding.default,
-               headers: route.headers ?? ApiHeader.normalHeader()).responseData { (response) in
+               headers: route.headers ?? APIHeader.normalHeader()).responseData { (response) in
       NetworkLogger.log(request: response.request!)
       if let error = response.error {
         if let err = error as? URLError, err.code == URLError.notConnectedToInternet {
@@ -65,8 +65,8 @@ class Router<T: Decodable> {
          let _ = String(data: data, encoding: String.Encoding.utf8) {
         do {
           var obj = try JSONDecoder().decode(BaseModel<T>.self, from: data)
-          obj.statusCode = response.response?.statusCode
-          let status = self.apiResponse(obj.statusCode)
+          obj.code = response.response?.statusCode
+          let status = self.apiResponse(obj.code)
           completion(obj, nil, status)
           
         } catch let error as NSError {

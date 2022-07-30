@@ -8,7 +8,13 @@
 
 import Foundation
 
-struct CampainService {
+protocol CampainServiceProtocol {
+  func campain(_ limit: Int,
+               lastKey: String,
+               completion: @escaping (_ obj: CampaignModel?, _ error: Error?) -> ())
+}
+
+struct CampainService: CampainServiceProtocol {
   func campain(_ limit: Int,
                lastKey: String,
                completion: @escaping (_ obj: CampaignModel?, _ error: Error?) -> ()) {

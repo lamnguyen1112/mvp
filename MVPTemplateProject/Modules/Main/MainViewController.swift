@@ -30,6 +30,7 @@ class MainViewController: BaseViewController, MainProtocol {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    presenter?.getUsers()
   }
   
   // MARK: - Setup

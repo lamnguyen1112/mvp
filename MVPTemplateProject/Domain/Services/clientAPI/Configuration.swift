@@ -9,7 +9,6 @@
 import Foundation
 
 enum Configuration: String {
-  
   case dev
   case staging
   case release

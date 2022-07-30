@@ -8,12 +8,12 @@ target 'MVPTemplateProject' do
   inhibit_all_warnings!
 
   # Pods for MVPTemplateProject
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire'
   pod 'SwiftLint'
   pod 'SVProgressHUD', '~> 2.2'
   pod 'Kingfisher'
   pod 'R.swift'
   pod "DBDebugToolkit", :configurations => ['Dev', 'Staging']
-  pod ''
+  pod 'SwiftEntryKit'
 
 end

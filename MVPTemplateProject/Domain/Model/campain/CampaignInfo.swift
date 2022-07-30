@@ -8,12 +8,6 @@
 
 import Foundation
 
-enum CampaignType: String {
-  case webview
-  case browser
-  case none
-}
-
 typealias CampaignModel = BaseModel<[CampaignInfo]>
 
 struct CampaignInfo: Decodable {
@@ -25,6 +19,7 @@ struct CampaignInfo: Decodable {
   var startDate: String?
   var target: String?
   var endDate: String?
+  
   var isImage: Bool? {
     get {
       if let empty = bannerUrl?.trimmingCharacters(in: .whitespaces).isEmpty {
@@ -45,5 +40,13 @@ struct CampaignInfo: Decodable {
             let typ = CampaignType(rawValue: typeStr) else { return CampaignType.none }
       return typ
     }
+  }
+}
+
+extension CampaignInfo {
+  enum CampaignType: String {
+    case webview
+    case browser
+    case none
   }
 }

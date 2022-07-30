@@ -3,4 +3,102 @@
    uuid = "C42A30B0-6EC7-4D2B-B5CF-B2A2F6C93CC5"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CCCEC6C-F177-421B-9C1F-714A224380E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVPTemplateProject/Domain/Services/clientAPI/Router.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "request(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBA584A2-5687-490A-BA03-70A22BACEBA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVPTemplateProject/Domain/Services/clientAPI/Router.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "request(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "795546EE-0318-4426-897A-1238D1F0600C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVPTemplateProject/Domain/Services/clientAPI/Router.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "request(_:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "795546EE-0318-4426-897A-1238D1F0600C - 50ed76faf86ef995"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in MVPTemplateProject.Router.request(_: MVPTemplateProject.EndPointType, completion: (Swift.Optional&lt;MVPTemplateProject.BaseModel&lt;&#x3c4;_0_0&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;, MVPTemplateProject.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "MVPTemplateProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lamnguyen/Desktop/NewTemplate/mvp/MVPTemplateProject/Domain/Services/clientAPI/Router.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1211">
+               </Location>
+               <Location
+                  uuid = "795546EE-0318-4426-897A-1238D1F0600C - 50ed76faf86ef995"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in MVPTemplateProject.Router.request(_: MVPTemplateProject.EndPointType, completion: (Swift.Optional&lt;MVPTemplateProject.BaseModel&lt;&#x3c4;_0_0&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;, MVPTemplateProject.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "MVPTemplateProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lamnguyen/Desktop/NewTemplate/mvp/MVPTemplateProject/Domain/Services/clientAPI/Router.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "3314">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3667D1F-5D14-4098-AA61-7110117FDF62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVPTemplateProject/Domain/Services/user/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

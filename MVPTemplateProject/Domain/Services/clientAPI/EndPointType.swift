@@ -9,7 +9,7 @@
 import Alamofire
 
 //typealias HTTPHeaders = [String:String]
-typealias HTTPParameter = [String : Any]
+typealias HTTPParameter = [String: Any]
 
 protocol EndPointType {
   var baseURL: URL { get }

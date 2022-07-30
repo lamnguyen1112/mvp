@@ -22,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     return true
   }
-  
+}
+
+extension AppDelegate {
   private func setupWindow() {
     window = UIWindow(frame: UIScreen.main.bounds)
     let mainViewController = MainContainer.resolveViewController()
@@ -30,9 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
   }
   
-}
-
-extension AppDelegate {
   private func setupDBToolKit() {
     #if !(APPSTORE)
       DBDebugToolkit.setup()

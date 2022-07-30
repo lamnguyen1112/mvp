@@ -30,7 +30,7 @@ extension CampainEndPoint: EndPointType {
   }
   
   var headers: HTTPHeaders? {
-    return ApiHeader.headerWithToken()
+    return APIHeader.headerWithToken()
   }
   
   var params: HTTPParameter? {
