@@ -47,6 +47,8 @@
 		D7C6C73A2395178F009E25EA /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7392395178F009E25EA /* BasePresenter.swift */; };
 		D7C6C73E23951B31009E25EA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C73D23951B31009E25EA /* BaseView.swift */; };
 		DE1CC52C289650180093304C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE1CC52B289650180093304C /* Alamofire */; };
+		DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC52E28966BC40093304C /* PopupHelper.swift */; };
+		DE1CC53128966C680093304C /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC53028966C680093304C /* UIDevice+Ex.swift */; };
 		DE3B2263289539AB00B4DF1F /* UserEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */; };
 		DE3B226628953E1E00B4DF1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B226528953E1E00B4DF1F /* User.swift */; };
 		DE3B22682895402D00B4DF1F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B22672895402D00B4DF1F /* UserService.swift */; };
@@ -107,6 +109,8 @@
 		D7C6C7392395178F009E25EA /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		D7C6C73D23951B31009E25EA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DE1BF26A274E175F0081AF71 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DE1CC52E28966BC40093304C /* PopupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHelper.swift; sourceTree = "<group>"; };
+		DE1CC53028966C680093304C /* UIDevice+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
 		DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoint.swift; sourceTree = "<group>"; };
 		DE3B226528953E1E00B4DF1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE3B22672895402D00B4DF1F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		06769AF42488EB1200A43D99 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CC53028966C680093304C /* UIDevice+Ex.swift */,
 				D7BA3C872391235E00D7854B /* UIColor+Extension.swift */,
 				D7BA3C852391234100D7854B /* UIView+Extension.swift */,
 				D7C6C7002394AB78009E25EA /* UIViewController+Extension.swift */,
@@ -268,7 +273,7 @@
 		D7C6C6FA2394A6B0009E25EA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DE63CAC828945FC0001BEAF1 /* Views */,
+				DE63CAC828945FC0001BEAF1 /* Cells */,
 				D7BA3C70239121BB00D7854B /* Main.storyboard */,
 				D7C6C7092394C594009E25EA /* MainContainer.swift */,
 				D7C6C70A2394C594009E25EA /* MainViewController.swift */,
@@ -309,6 +314,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DE1CC52D28966BAC0093304C /* PopupHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC52E28966BC40093304C /* PopupHelper.swift */,
+			);
+			path = PopupHelper;
+			sourceTree = "<group>";
+		};
 		DE3B22602894E6EA00B4DF1F /* campain */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +352,7 @@
 		DE5D13972895B5EE00A9EB08 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CC52D28966BAC0093304C /* PopupHelper */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -381,13 +395,13 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		DE63CAC828945FC0001BEAF1 /* Views */ = {
+		DE63CAC828945FC0001BEAF1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				D7C6C7372394F5F7009E25EA /* TitleTableViewCell.swift */,
 				DE5D13932895A5CB00A9EB08 /* UserTableViewCell.swift */,
 			);
-			path = Views;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DE63CAC9289461B7001BEAF1 /* campain */ = {
@@ -569,6 +583,7 @@
 				D7BA3C8E2391285000D7854B /* NStringAttribute+Extension.swift in Sources */,
 				D7C6C70D2394C594009E25EA /* MainViewController.swift in Sources */,
 				06769AE82488D3AA00A43D99 /* UITextField+Extension.swift in Sources */,
+				DE1CC53128966C680093304C /* UIDevice+Ex.swift in Sources */,
 				D7C6C7122394CE55009E25EA /* UITableView+Extension.swift in Sources */,
 				D7BA3C8A2391236D00D7854B /* String+Extension.swift in Sources */,
 				D7C6C7302394EAC7009E25EA /* CampaignEndPoint.swift in Sources */,
@@ -582,6 +597,7 @@
 				D7C6C71E2394E32B009E25EA /* APIHeader.swift in Sources */,
 				D7C6C7272394E3D3009E25EA /* Ultilities.swift in Sources */,
 				06769AEA2488D7D700A43D99 /* AlertPresentable.swift in Sources */,
+				DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */,
 				D7C6C70E2394C594009E25EA /* MainPresenter.swift in Sources */,
 				D7C6C7012394AB78009E25EA /* UIViewController+Extension.swift in Sources */,
 				06769AF22488E88C00A43D99 /* Date+Extension.swift in Sources */,

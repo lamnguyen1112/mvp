@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MainPresenterProtocol {
-  
+  func getUsers()
 }
 
 class MainPresenter: MainPresenterProtocol {

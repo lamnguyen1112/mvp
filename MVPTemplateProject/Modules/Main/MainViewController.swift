@@ -19,7 +19,7 @@ class MainViewController: BaseViewController {
   @IBOutlet private weak var tableView: UITableView!
   
   // MARK: - Properties
-  var presenter: MainPresenter?
+  var presenter: MainPresenterProtocol?
   var users: [User]?
   
   // MARK: - Define
@@ -47,8 +47,8 @@ extension MainViewController {
     tableView.rowHeight = UITableView.automaticDimension
     tableView.dataSource = self
     tableView.delegate = self
-    tableView.separatorColor = .clear
-    tableView.showsVerticalScrollIndicator = false
+//    tableView.separatorColor = .clear
+    tableView.showsVerticalScrollIndicator = true
   }
 }
 
