@@ -16,15 +16,10 @@ class MainPresenter: MainPresenterProtocol {
   
   weak var viewController: MainProtocol?
   private let userService: UserServiceProtocol = UserService()// UserServiceMock()
+  private var userTask: Task<(), Never>?
   
   func getUsers() {
-//    old version
-//    userService.getUsers(completion: { users, error in
-//      self.viewController?.reloadListUser(users)
-//    })
-    
-//    new version
-    Task {
+    userTask = Task() {
       let (users, _) = await userService.getUsers()
       
       await MainActor.run(body: {
@@ -33,4 +28,13 @@ class MainPresenter: MainPresenterProtocol {
     }
   }
   
+//  func oldVersionGetUsers() {
+//      userService.getUsers(completion: { users, error in
+//        self.viewController?.reloadListUser(users)
+//      })
+//  }
+  
+  deinit {
+    userTask?.cancel()
+  }
 }
