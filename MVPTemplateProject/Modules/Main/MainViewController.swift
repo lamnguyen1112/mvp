@@ -32,6 +32,9 @@ class MainViewController: BaseViewController {
     super.viewDidLoad()
     setupUI()
     presenter?.getUsers()
+    if let token = AppData.token {
+      print(token)
+    }
   }
 }
 

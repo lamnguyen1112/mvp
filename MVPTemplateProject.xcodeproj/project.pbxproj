@@ -49,6 +49,8 @@
 		DE1CC52C289650180093304C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE1CC52B289650180093304C /* Alamofire */; };
 		DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC52E28966BC40093304C /* PopupHelper.swift */; };
 		DE1CC53128966C680093304C /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC53028966C680093304C /* UIDevice+Ex.swift */; };
+		DE1CC536289675C10093304C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC535289675C10093304C /* Storage.swift */; };
+		DE1CC539289676010093304C /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC538289676010093304C /* AppData.swift */; };
 		DE3B2263289539AB00B4DF1F /* UserEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */; };
 		DE3B226628953E1E00B4DF1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B226528953E1E00B4DF1F /* User.swift */; };
 		DE3B22682895402D00B4DF1F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B22672895402D00B4DF1F /* UserService.swift */; };
@@ -111,6 +113,8 @@
 		DE1BF26A274E175F0081AF71 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE1CC52E28966BC40093304C /* PopupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHelper.swift; sourceTree = "<group>"; };
 		DE1CC53028966C680093304C /* UIDevice+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		DE1CC535289675C10093304C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DE1CC538289676010093304C /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoint.swift; sourceTree = "<group>"; };
 		DE3B226528953E1E00B4DF1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE3B22672895402D00B4DF1F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 		D7BA3C7F239121D400D7854B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CC5342896756C0093304C /* PropertyWrapper */,
 				06769AF42488EB1200A43D99 /* UIKit */,
 				06769AF32488EAC500A43D99 /* Foundation */,
 				06769AEC2488D7F300A43D99 /* Protocols */,
@@ -322,6 +327,22 @@
 			path = PopupHelper;
 			sourceTree = "<group>";
 		};
+		DE1CC5342896756C0093304C /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC535289675C10093304C /* Storage.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		DE1CC537289675EE0093304C /* AppData */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC538289676010093304C /* AppData.swift */,
+			);
+			path = AppData;
+			sourceTree = "<group>";
+		};
 		DE3B22602894E6EA00B4DF1F /* campain */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +373,7 @@
 		DE5D13972895B5EE00A9EB08 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CC537289675EE0093304C /* AppData */,
 				DE1CC52D28966BAC0093304C /* PopupHelper */,
 			);
 			path = Utils;
@@ -578,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C6C7212394E32B009E25EA /* NetworkLogger.swift in Sources */,
+				DE1CC539289676010093304C /* AppData.swift in Sources */,
 				D7C6C73A2395178F009E25EA /* BasePresenter.swift in Sources */,
 				D7C6C7142394CE82009E25EA /* UICollectionView+Extension.swift in Sources */,
 				D7BA3C8E2391285000D7854B /* NStringAttribute+Extension.swift in Sources */,
@@ -598,6 +621,7 @@
 				D7C6C7272394E3D3009E25EA /* Ultilities.swift in Sources */,
 				06769AEA2488D7D700A43D99 /* AlertPresentable.swift in Sources */,
 				DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */,
+				DE1CC536289675C10093304C /* Storage.swift in Sources */,
 				D7C6C70E2394C594009E25EA /* MainPresenter.swift in Sources */,
 				D7C6C7012394AB78009E25EA /* UIViewController+Extension.swift in Sources */,
 				06769AF22488E88C00A43D99 /* Date+Extension.swift in Sources */,

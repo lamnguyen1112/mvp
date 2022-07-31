@@ -32,7 +32,7 @@ enum Configuration: String {
     case .dev:
       return isUsingMock ? URL(string: "http://demo5237716.mockable.io/")! : URL(string: "https://dev.mrlazy.template.com")!
     case .staging:
-      return URL(string: "https://staging.mrlazy.template.com")!
+      return isUsingMock ? URL(string: "http://demo5237716.mockable.io/")! : URL(string: "https://staging.mrlazy.template.com")!
     case .release:
       return URL(string: "https://mrlazy.template.com")!
     }
