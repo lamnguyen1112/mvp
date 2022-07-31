@@ -53,6 +53,8 @@
 		DE63CAC128944CBA001BEAF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE63CAC028944CBA001BEAF1 /* Localizable.strings */; };
 		DE63CAC428944ED8001BEAF1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63CAC328944ED8001BEAF1 /* R.generated.swift */; };
 		DE63CACB2894639C001BEAF1 /* CampainServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63CACA2894639C001BEAF1 /* CampainServiceMock.swift */; };
+		DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB11816289616FE00A47B2A /* UserServiceMock.swift */; };
+		DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEB1181D28961B5100A47B2A /* UsersMock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +113,8 @@
 		DE63CAC028944CBA001BEAF1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DE63CAC328944ED8001BEAF1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		DE63CACA2894639C001BEAF1 /* CampainServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampainServiceMock.swift; sourceTree = "<group>"; };
+		DEB11816289616FE00A47B2A /* UserServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
+		DEB1181D28961B5100A47B2A /* UsersMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersMock.json; sourceTree = "<group>"; };
 		ECC43B98F88C7936379C68C6 /* Pods-MVPTemplateProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.dev.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.dev.xcconfig"; sourceTree = "<group>"; };
 		F20B05C84CC7F9449F8FC4CE /* Pods-MVPTemplateProject.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.staging.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -316,6 +320,8 @@
 			children = (
 				DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */,
 				DE3B22672895402D00B4DF1F /* UserService.swift */,
+				DEB11816289616FE00A47B2A /* UserServiceMock.swift */,
+				DEB1181D28961B5100A47B2A /* UsersMock.json */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -326,6 +332,13 @@
 				DE3B226528953E1E00B4DF1F /* User.swift */,
 			);
 			path = user;
+			sourceTree = "<group>";
+		};
+		DE5D13972895B5EE00A9EB08 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DE63CABF28944C8B001BEAF1 /* Resources */ = {
@@ -346,6 +359,7 @@
 			children = (
 				D7BA3C7E239121CA00D7854B /* Services */,
 				D7C6C7282394E452009E25EA /* Models */,
+				DE5D13972895B5EE00A9EB08 /* Utils */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -447,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BA3C77239121BC00D7854B /* LaunchScreen.storyboard in Resources */,
+				DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */,
 				DE63CAC128944CBA001BEAF1 /* Localizable.strings in Resources */,
 				D7BA3C74239121BC00D7854B /* Assets.xcassets in Resources */,
 				D7BA3C72239121BB00D7854B /* Main.storyboard in Resources */,
@@ -550,6 +565,7 @@
 				D7BA3C8A2391236D00D7854B /* String+Extension.swift in Sources */,
 				D7C6C7302394EAC7009E25EA /* CampaignEndPoint.swift in Sources */,
 				D7C6C71F2394E32B009E25EA /* Router.swift in Sources */,
+				DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */,
 				D7BA3C6B239121BB00D7854B /* AppDelegate.swift in Sources */,
 				DE63CAC428944ED8001BEAF1 /* R.generated.swift in Sources */,
 				DE63CACB2894639C001BEAF1 /* CampainServiceMock.swift in Sources */,

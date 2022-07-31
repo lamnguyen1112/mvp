@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct UserService {
+protocol UserServiceProtocol {
+  func getUsers() async -> ([User]?, Error?)
+}
+
+struct UserService: UserServiceProtocol {
   func getUsers(completion: @escaping (_ users: [User]?, _ error: Error?) -> ()) {
     let router = Router<[User]>()
     let userEndPoint = UserEndPoint.users

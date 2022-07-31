@@ -114,6 +114,20 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `UsersMock.json`.
+    static let usersMockJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UsersMock", pathExtension: "json")
+
+    /// `bundle.url(forResource: "UsersMock", withExtension: "json")`
+    static func usersMockJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.usersMockJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `TitleTableViewCell`.

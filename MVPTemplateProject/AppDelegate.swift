@@ -41,7 +41,6 @@ extension AppDelegate {
     let valUseMock = DBCustomVariable(name: "Using mock", value: isUsingMock)
     valUseMock.addTarget(self, action: #selector(changeUsingMockConfig))
     DBDebugToolkit.add(valUseMock)
-    
     #endif
   }
   

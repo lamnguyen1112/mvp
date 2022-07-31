@@ -15,8 +15,7 @@ protocol MainPresenterProtocol {
 class MainPresenter: MainPresenterProtocol {
   
   weak var viewController: MainProtocol?
-  
-  private let userService = UserService()
+  private let userService: UserServiceProtocol = UserServiceMock()
   
   func getUsers() {
 //    old version
