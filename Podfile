@@ -8,7 +8,6 @@ target 'MVPTemplateProject' do
   inhibit_all_warnings!
 
   # Pods for MVPTemplateProject
-  pod 'Alamofire'
   pod 'SwiftLint'
   pod 'SVProgressHUD', '~> 2.2'
   pod 'Kingfisher'

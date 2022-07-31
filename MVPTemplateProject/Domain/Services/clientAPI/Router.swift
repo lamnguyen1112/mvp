@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Foundation
 
 enum Result {
   case success

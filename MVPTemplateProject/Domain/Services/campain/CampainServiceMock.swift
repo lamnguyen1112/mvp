@@ -7,16 +7,3 @@
 //
 
 import Foundation
-
-//class CampainServiceMock: CampainServiceProtocol {
-//  func campain(_ limit: Int, lastKey: String, completion: @escaping (CampaignModel?, Error?) -> ()) {
-//    guard let url = Bundle.main.url(forResource: "AnimalsMock", withExtension: "json"),
-//      let data = try? Data(contentsOf: url) else { return }
-//    let decoder = JSONDecoder()
-//    decoder.keyDecodingStrategy = .convertFromSnakeCase
-//    let jsonMock = try? decoder.decode(CampaignInfo.self, from: data)
-//    let error = Error()
-//    completion(jsonMock, )
-//  }
-//
-//}

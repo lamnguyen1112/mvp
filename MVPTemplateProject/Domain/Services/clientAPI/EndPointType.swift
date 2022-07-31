@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Foundation
 
 //typealias HTTPHeaders = [String:String]
 typealias HTTPParameter = [String: Any]
