@@ -6,11 +6,15 @@
 //  Copyright © 2022 lazyman. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct AppData {
   @Storage(key: StorageKey.tokenKey, defaultValue: nil)
   static var token: String?
+  
+  static func clearAllData() {
+    token = nil
+  }
 }
 
 extension AppData {

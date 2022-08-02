@@ -14,5 +14,6 @@ target 'MVPTemplateProject' do
   pod 'R.swift'
   pod 'DBDebugToolkit', '~> 0.8.0'
   pod 'SwiftEntryKit'
+  pod 'SideMenuSwift'
 
 end

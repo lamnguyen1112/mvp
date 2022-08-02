@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 protocol MainProtocol: BaseView {
   func requestError(_ msg: String, titleAlert: String?)
@@ -43,6 +44,10 @@ extension MainViewController {
   private func setupUI() {
     title = "Users"
     view.backgroundColor = .white
+    self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu",
+                                                             style: .plain,
+                                                             target: self,
+                                                             action: #selector(rightHandAction))
     configureTableView()
   }
   
@@ -52,6 +57,10 @@ extension MainViewController {
     tableView.delegate = self
 //    tableView.separatorColor = .clear
     tableView.showsVerticalScrollIndicator = true
+  }
+  
+  @objc private func rightHandAction() {
+    self.sideMenuController?.revealMenu()
   }
 }
 

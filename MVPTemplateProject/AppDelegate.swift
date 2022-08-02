@@ -10,6 +10,7 @@ import UIKit
 #if !(APPSTORE)
   import DBDebugToolkit
 #endif
+import SideMenuSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,9 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
   private func setupWindow() {
     window = UIWindow(frame: UIScreen.main.bounds)
-    let mainViewController = MainContainer.resolveViewController()
-    let rootViewController = UINavigationController(rootViewController: mainViewController)
-    window?.rootViewController = rootViewController
+    window?.rootViewController = SideMenuController()
     window?.makeKeyAndVisible()
   }
   

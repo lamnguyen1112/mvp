@@ -58,6 +58,9 @@
 		DE63CAC128944CBA001BEAF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE63CAC028944CBA001BEAF1 /* Localizable.strings */; };
 		DE63CAC428944ED8001BEAF1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63CAC328944ED8001BEAF1 /* R.generated.swift */; };
 		DE63CACB2894639C001BEAF1 /* CampainServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63CACA2894639C001BEAF1 /* CampainServiceMock.swift */; };
+		DE7AEDF92899BF3700DF8F01 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDF72899BF3700DF8F01 /* MenuViewController.swift */; };
+		DE7AEDFA2899BF3700DF8F01 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */; };
+		DE7AEDFC2899C6B200DF8F01 /* SideMenuController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */; };
 		DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB11816289616FE00A47B2A /* UserServiceMock.swift */; };
 		DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEB1181D28961B5100A47B2A /* UsersMock.json */; };
 /* End PBXBuildFile section */
@@ -122,6 +125,9 @@
 		DE63CAC028944CBA001BEAF1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DE63CAC328944ED8001BEAF1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		DE63CACA2894639C001BEAF1 /* CampainServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampainServiceMock.swift; sourceTree = "<group>"; };
+		DE7AEDF72899BF3700DF8F01 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideMenuController+Extension.swift"; sourceTree = "<group>"; };
 		DEB11816289616FE00A47B2A /* UserServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
 		DEB1181D28961B5100A47B2A /* UsersMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersMock.json; sourceTree = "<group>"; };
 		ECC43B98F88C7936379C68C6 /* Pods-MVPTemplateProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.dev.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.dev.xcconfig"; sourceTree = "<group>"; };
@@ -283,6 +289,7 @@
 				D7C6C7092394C594009E25EA /* MainContainer.swift */,
 				D7C6C70A2394C594009E25EA /* MainViewController.swift */,
 				D7C6C70B2394C594009E25EA /* MainPresenter.swift */,
+				DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -412,6 +419,7 @@
 		DE63CAC728945F45001BEAF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DE7AEDF62899BF1B00DF8F01 /* Menu */,
 				D7C6C6FA2394A6B0009E25EA /* Main */,
 			);
 			path = Modules;
@@ -434,6 +442,15 @@
 				DE63CACA2894639C001BEAF1 /* CampainServiceMock.swift */,
 			);
 			path = campain;
+			sourceTree = "<group>";
+		};
+		DE7AEDF62899BF1B00DF8F01 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DE7AEDF72899BF3700DF8F01 /* MenuViewController.swift */,
+				DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BA3C77239121BC00D7854B /* LaunchScreen.storyboard in Resources */,
+				DE7AEDFA2899BF3700DF8F01 /* MenuViewController.xib in Resources */,
 				DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */,
 				DE63CAC128944CBA001BEAF1 /* Localizable.strings in Resources */,
 				D7BA3C74239121BC00D7854B /* Assets.xcassets in Resources */,
@@ -603,6 +621,7 @@
 				DE1CC539289676010093304C /* AppData.swift in Sources */,
 				D7C6C73A2395178F009E25EA /* BasePresenter.swift in Sources */,
 				D7C6C7142394CE82009E25EA /* UICollectionView+Extension.swift in Sources */,
+				DE7AEDF92899BF3700DF8F01 /* MenuViewController.swift in Sources */,
 				D7BA3C8E2391285000D7854B /* NStringAttribute+Extension.swift in Sources */,
 				D7C6C70D2394C594009E25EA /* MainViewController.swift in Sources */,
 				06769AE82488D3AA00A43D99 /* UITextField+Extension.swift in Sources */,
@@ -629,6 +648,7 @@
 				D7C6C6FF2394AA71009E25EA /* AppStoryBoard.swift in Sources */,
 				D7C6C7202394E32B009E25EA /* Connectivity.swift in Sources */,
 				D7C6C6FD2394A6D3009E25EA /* BaseViewController.swift in Sources */,
+				DE7AEDFC2899C6B200DF8F01 /* SideMenuController+Extension.swift in Sources */,
 				06769AEE2488E23900A43D99 /* Error+Extension.swift in Sources */,
 				D7C6C72A2394E465009E25EA /* BaseModel.swift in Sources */,
 				DE3B226628953E1E00B4DF1F /* User.swift in Sources */,
@@ -734,7 +754,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,7 +892,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,7 +912,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

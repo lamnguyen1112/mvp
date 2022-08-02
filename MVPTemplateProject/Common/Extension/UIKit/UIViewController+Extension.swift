@@ -16,4 +16,12 @@ extension UIViewController {
   static func instantiateFromAppStoryboard(appStoryboard: AppStoryBoard) -> Self {
     appStoryboard.viewController(viewControllerClass: self)
   }
+  
+  static var classIdentifier: String {
+      return String(describing: self)
+  }
+  
+  class func instanceFromNibClass() -> Self {
+      return self.init(nibName: self.classIdentifier, bundle: nil)
+  }
 }
