@@ -12,9 +12,8 @@ import SideMenuSwift
 extension SideMenuController {
   convenience init() {
     let menuViewController = MenuViewController.instanceFromNibClass()
-    let mainViewController = MainContainer.resolveViewController()
-    let rootViewController = UINavigationController(rootViewController: mainViewController)
-    self.init(contentViewController: rootViewController, menuViewController: menuViewController)
+    let tabbarViewController = TabBarViewController()
+    self.init(contentViewController: tabbarViewController, menuViewController: menuViewController)
     
     setupSideMenu()
   }

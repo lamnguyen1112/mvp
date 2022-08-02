@@ -61,6 +61,7 @@
 		DE7AEDF92899BF3700DF8F01 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDF72899BF3700DF8F01 /* MenuViewController.swift */; };
 		DE7AEDFA2899BF3700DF8F01 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */; };
 		DE7AEDFC2899C6B200DF8F01 /* SideMenuController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */; };
+		DE7AEDFF2899C9F700DF8F01 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDFE2899C9F700DF8F01 /* TabBarViewController.swift */; };
 		DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB11816289616FE00A47B2A /* UserServiceMock.swift */; };
 		DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEB1181D28961B5100A47B2A /* UsersMock.json */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		DE7AEDF72899BF3700DF8F01 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideMenuController+Extension.swift"; sourceTree = "<group>"; };
+		DE7AEDFE2899C9F700DF8F01 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DEB11816289616FE00A47B2A /* UserServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
 		DEB1181D28961B5100A47B2A /* UsersMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersMock.json; sourceTree = "<group>"; };
 		ECC43B98F88C7936379C68C6 /* Pods-MVPTemplateProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.dev.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.dev.xcconfig"; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 		DE63CAC728945F45001BEAF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DE7AEDFD2899C9D700DF8F01 /* Tabbar */,
 				DE7AEDF62899BF1B00DF8F01 /* Menu */,
 				D7C6C6FA2394A6B0009E25EA /* Main */,
 			);
@@ -451,6 +454,14 @@
 				DE7AEDF82899BF3700DF8F01 /* MenuViewController.xib */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		DE7AEDFD2899C9D700DF8F01 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DE7AEDFE2899C9F700DF8F01 /* TabBarViewController.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,6 +674,7 @@
 				D7C6C7232394E32B009E25EA /* Configuration.swift in Sources */,
 				DE3B22682895402D00B4DF1F /* UserService.swift in Sources */,
 				D7C6C7382394F5F7009E25EA /* TitleTableViewCell.swift in Sources */,
+				DE7AEDFF2899C9F700DF8F01 /* TabBarViewController.swift in Sources */,
 				D7C6C70C2394C594009E25EA /* MainContainer.swift in Sources */,
 				DE3B2263289539AB00B4DF1F /* UserEndPoint.swift in Sources */,
 			);

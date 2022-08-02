@@ -42,7 +42,7 @@ class MainViewController: BaseViewController {
 // MARK: - Setup
 extension MainViewController {
   private func setupUI() {
-    title = "Users"
+//    title = "Users"
     view.backgroundColor = .white
     self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu",
                                                              style: .plain,
