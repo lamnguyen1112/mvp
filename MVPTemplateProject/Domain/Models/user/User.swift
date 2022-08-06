@@ -11,10 +11,18 @@ import Foundation
 struct User: Decodable {
   var userId: Int?
   var name: String?
+  var address: Address?
 }
 
 extension User: CustomDebugStringConvertible {
   var debugDescription: String {
     return "\(userId ?? 0) \(name ?? "")"
+  }
+}
+
+extension User {
+  struct Address: Decodable {
+    var town: String?
+    var number: String?
   }
 }

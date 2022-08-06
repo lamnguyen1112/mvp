@@ -93,10 +93,16 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
       return configureUserSection(tableView, indexPath: indexPath)
     }
   }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let viewController = UIViewController()
+    self.navigationController?.pushViewController(viewController, animated: true)
+  }
 }
 
 // MARK:- configure Section
 extension MainViewController {
+  typealias Address = User.Address
   func configureTitleSection(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.defaultReuseIdentifier, for: indexPath) as? TitleTableViewCell else {
       return UITableViewCell()
@@ -111,6 +117,7 @@ extension MainViewController {
       return UITableViewCell()
     }
     cell.selectionStyle = .none
+    let address = Address()
     let user = users?[indexPath.row]
     cell.setUser(user)
     
