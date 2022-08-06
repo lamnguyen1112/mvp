@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenuSwift
+import SwiftUI
 
 protocol MainProtocol: BaseView {
   func requestError(_ msg: String, titleAlert: String?)
