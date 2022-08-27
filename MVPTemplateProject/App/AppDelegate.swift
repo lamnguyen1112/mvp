@@ -35,6 +35,7 @@ extension AppDelegate {
   
   private func setupDBToolKit() {
     #if !(APPSTORE)
+    UserDefaults.standard.set(true, forKey: UserDefaultKey.isUsingMock.rawValue)
     DBDebugToolkit.setup()
     DBDebugToolkit.setupCrashReporting()
     

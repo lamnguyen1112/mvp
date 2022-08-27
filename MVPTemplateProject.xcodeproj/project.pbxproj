@@ -32,10 +32,6 @@
 		D7C6C7142394CE82009E25EA /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7132394CE82009E25EA /* UICollectionView+Extension.swift */; };
 		D7C6C7162394CEAC009E25EA /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7152394CEAC009E25EA /* ReusableView.swift */; };
 		D7C6C71E2394E32B009E25EA /* APIHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7182394E32B009E25EA /* APIHeader.swift */; };
-		D7C6C71F2394E32B009E25EA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7192394E32B009E25EA /* Router.swift */; };
-		D7C6C7202394E32B009E25EA /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C71A2394E32B009E25EA /* Connectivity.swift */; };
-		D7C6C7212394E32B009E25EA /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C71B2394E32B009E25EA /* NetworkLogger.swift */; };
-		D7C6C7222394E32B009E25EA /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C71C2394E32B009E25EA /* EndPointType.swift */; };
 		D7C6C7232394E32B009E25EA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C71D2394E32B009E25EA /* Configuration.swift */; };
 		D7C6C7252394E371009E25EA /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7242394E371009E25EA /* UserDefaultManager.swift */; };
 		D7C6C7272394E3D3009E25EA /* Ultilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7262394E3D3009E25EA /* Ultilities.swift */; };
@@ -46,7 +42,6 @@
 		D7C6C7382394F5F7009E25EA /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7372394F5F7009E25EA /* TitleTableViewCell.swift */; };
 		D7C6C73A2395178F009E25EA /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7392395178F009E25EA /* BasePresenter.swift */; };
 		D7C6C73E23951B31009E25EA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C73D23951B31009E25EA /* BaseView.swift */; };
-		DE1CC52C289650180093304C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE1CC52B289650180093304C /* Alamofire */; };
 		DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC52E28966BC40093304C /* PopupHelper.swift */; };
 		DE1CC53128966C680093304C /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC53028966C680093304C /* UIDevice+Ex.swift */; };
 		DE1CC536289675C10093304C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC535289675C10093304C /* Storage.swift */; };
@@ -67,6 +62,7 @@
 		DE7AEDFF2899C9F700DF8F01 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AEDFE2899C9F700DF8F01 /* TabBarViewController.swift */; };
 		DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB11816289616FE00A47B2A /* UserServiceMock.swift */; };
 		DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEB1181D28961B5100A47B2A /* UsersMock.json */; };
+		E0114D2728B9B36F009C7A26 /* APlClient in Frameworks */ = {isa = PBXBuildFile; productRef = E0114D2628B9B36F009C7A26 /* APlClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,10 +99,6 @@
 		D7C6C7132394CE82009E25EA /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		D7C6C7152394CEAC009E25EA /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		D7C6C7182394E32B009E25EA /* APIHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHeader.swift; sourceTree = "<group>"; };
-		D7C6C7192394E32B009E25EA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		D7C6C71A2394E32B009E25EA /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		D7C6C71B2394E32B009E25EA /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
-		D7C6C71C2394E32B009E25EA /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		D7C6C71D2394E32B009E25EA /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D7C6C7242394E371009E25EA /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		D7C6C7262394E3D3009E25EA /* Ultilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultilities.swift; sourceTree = "<group>"; };
@@ -148,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D5FA427F48C9F335A4C30E /* Pods_MVPTemplateProject.framework in Frameworks */,
-				DE1CC52C289650180093304C /* Alamofire in Frameworks */,
+				E0114D2728B9B36F009C7A26 /* APlClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,11 +234,10 @@
 		D7BA3C69239121BB00D7854B /* MVPTemplateProject */ = {
 			isa = PBXGroup;
 			children = (
-				D7BA3C6A239121BB00D7854B /* AppDelegate.swift */,
+				E0114D2828B9BD8B009C7A26 /* App */,
 				DE63CAC5289451FA001BEAF1 /* Domain */,
 				DE63CAC728945F45001BEAF1 /* Modules */,
 				D7BA3C822391222100D7854B /* Common */,
-				DE63CAC6289452BB001BEAF1 /* Libraries */,
 				DE63CABF28944C8B001BEAF1 /* Resources */,
 				D7BA3C78239121BC00D7854B /* Info.plist */,
 			);
@@ -258,9 +249,9 @@
 		D7BA3C7E239121CA00D7854B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D7C6C7182394E32B009E25EA /* APIHeader.swift */,
 				DE3B22612894E8C300B4DF1F /* user */,
 				DE63CAC9289461B7001BEAF1 /* campain */,
-				D7C6C7172394E32B009E25EA /* clientAPI */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -298,7 +289,6 @@
 				D7C6C7092394C594009E25EA /* MainContainer.swift */,
 				D7C6C70A2394C594009E25EA /* MainViewController.swift */,
 				D7C6C70B2394C594009E25EA /* MainPresenter.swift */,
-				DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */,
 				DE5E13E3289ED01B000E9E60 /* HelloView.swift */,
 			);
 			path = Main;
@@ -312,18 +302,6 @@
 				D7C6C6FC2394A6D3009E25EA /* BaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		D7C6C7172394E32B009E25EA /* clientAPI */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6C7182394E32B009E25EA /* APIHeader.swift */,
-				D7C6C7192394E32B009E25EA /* Router.swift */,
-				D7C6C71A2394E32B009E25EA /* Connectivity.swift */,
-				D7C6C71B2394E32B009E25EA /* NetworkLogger.swift */,
-				D7C6C71C2394E32B009E25EA /* EndPointType.swift */,
-			);
-			path = clientAPI;
 			sourceTree = "<group>";
 		};
 		D7C6C7282394E452009E25EA /* Models */ = {
@@ -420,13 +398,6 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		DE63CAC6289452BB001BEAF1 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
 		DE63CAC728945F45001BEAF1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +444,15 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		E0114D2828B9BD8B009C7A26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA3C6A239121BB00D7854B /* AppDelegate.swift */,
+				DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,7 +474,7 @@
 			);
 			name = MVPTemplateProject;
 			packageProductDependencies = (
-				DE1CC52B289650180093304C /* Alamofire */,
+				E0114D2628B9B36F009C7A26 /* APlClient */,
 			);
 			productName = MVPTemplateProject;
 			productReference = D7BA3C67239121BB00D7854B /* MVPTemplateProject.app */;
@@ -525,7 +505,7 @@
 			);
 			mainGroup = D7BA3C5E239121BB00D7854B;
 			packageReferences = (
-				DE1CC52A289650180093304C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E0114D2528B9B36F009C7A26 /* XCRemoteSwiftPackageReference "apiclient" */,
 			);
 			productRefGroup = D7BA3C68239121BB00D7854B /* Products */;
 			projectDirPath = "";
@@ -638,7 +618,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C6C7212394E32B009E25EA /* NetworkLogger.swift in Sources */,
 				DE1CC539289676010093304C /* AppData.swift in Sources */,
 				D7C6C73A2395178F009E25EA /* BasePresenter.swift in Sources */,
 				D7C6C7142394CE82009E25EA /* UICollectionView+Extension.swift in Sources */,
@@ -650,7 +629,6 @@
 				D7C6C7122394CE55009E25EA /* UITableView+Extension.swift in Sources */,
 				D7BA3C8A2391236D00D7854B /* String+Extension.swift in Sources */,
 				D7C6C7302394EAC7009E25EA /* CampaignEndPoint.swift in Sources */,
-				D7C6C71F2394E32B009E25EA /* Router.swift in Sources */,
 				DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */,
 				D7BA3C6B239121BB00D7854B /* AppDelegate.swift in Sources */,
 				DE63CAC428944ED8001BEAF1 /* R.generated.swift in Sources */,
@@ -667,7 +645,6 @@
 				06769AF22488E88C00A43D99 /* Date+Extension.swift in Sources */,
 				D7C6C72D2394EA79009E25EA /* CampainService.swift in Sources */,
 				D7C6C6FF2394AA71009E25EA /* AppStoryBoard.swift in Sources */,
-				D7C6C7202394E32B009E25EA /* Connectivity.swift in Sources */,
 				D7C6C6FD2394A6D3009E25EA /* BaseViewController.swift in Sources */,
 				DE5E13E8289ED278000E9E60 /* Color+Extension.swift in Sources */,
 				DE7AEDFC2899C6B200DF8F01 /* SideMenuController+Extension.swift in Sources */,
@@ -676,7 +653,6 @@
 				DE3B226628953E1E00B4DF1F /* User.swift in Sources */,
 				D7BA3C842391223800D7854B /* Global.swift in Sources */,
 				D7C6C73E23951B31009E25EA /* BaseView.swift in Sources */,
-				D7C6C7222394E32B009E25EA /* EndPointType.swift in Sources */,
 				D7BA3C882391235E00D7854B /* UIColor+Extension.swift in Sources */,
 				D7C6C7252394E371009E25EA /* UserDefaultManager.swift in Sources */,
 				D7C6C7162394CEAC009E25EA /* ReusableView.swift in Sources */,
@@ -974,21 +950,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE1CC52A289650180093304C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		E0114D2528B9B36F009C7A26 /* XCRemoteSwiftPackageReference "apiclient" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			repositoryURL = "https://github.com/lamnguyen1112/apiclient.git";
 			requirement = {
-				kind = exactVersion;
-				version = 5.6.2;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DE1CC52B289650180093304C /* Alamofire */ = {
+		E0114D2628B9B36F009C7A26 /* APlClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE1CC52A289650180093304C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = E0114D2528B9B36F009C7A26 /* XCRemoteSwiftPackageReference "apiclient" */;
+			productName = APlClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APlClient
 
 protocol UserServiceProtocol {
   func getUsers() async -> ([User]?, Error?)

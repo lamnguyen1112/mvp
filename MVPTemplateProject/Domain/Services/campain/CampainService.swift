@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APlClient
 
 protocol CampainServiceProtocol {
   func campain(_ limit: Int,

@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import APlClient
 
 enum CampainEndPoint {
   case campain(limit: Int, lastKey: String)
