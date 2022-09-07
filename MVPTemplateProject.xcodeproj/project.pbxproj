@@ -63,6 +63,9 @@
 		DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB11816289616FE00A47B2A /* UserServiceMock.swift */; };
 		DEB1181E28961B5100A47B2A /* UsersMock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEB1181D28961B5100A47B2A /* UsersMock.json */; };
 		E0114D2728B9B36F009C7A26 /* APlClient in Frameworks */ = {isa = PBXBuildFile; productRef = E0114D2628B9B36F009C7A26 /* APlClient */; };
+		E01C5DFD28C908E500033108 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C5DFB28C908E500033108 /* DetailsViewController.swift */; };
+		E01C5DFE28C908E500033108 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01C5DFC28C908E500033108 /* DetailsViewController.xib */; };
+		E01C5E0228C912AF00033108 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C5E0128C912AF00033108 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +133,9 @@
 		DE7AEDFE2899C9F700DF8F01 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DEB11816289616FE00A47B2A /* UserServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceMock.swift; sourceTree = "<group>"; };
 		DEB1181D28961B5100A47B2A /* UsersMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersMock.json; sourceTree = "<group>"; };
+		E01C5DFB28C908E500033108 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E01C5DFC28C908E500033108 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		E01C5E0128C912AF00033108 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		ECC43B98F88C7936379C68C6 /* Pods-MVPTemplateProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.dev.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.dev.xcconfig"; sourceTree = "<group>"; };
 		F20B05C84CC7F9449F8FC4CE /* Pods-MVPTemplateProject.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTemplateProject.staging.xcconfig"; path = "Target Support Files/Pods-MVPTemplateProject/Pods-MVPTemplateProject.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +242,7 @@
 			children = (
 				E0114D2828B9BD8B009C7A26 /* App */,
 				DE63CAC5289451FA001BEAF1 /* Domain */,
+				E01C5DFF28C9128F00033108 /* Components */,
 				DE63CAC728945F45001BEAF1 /* Modules */,
 				D7BA3C822391222100D7854B /* Common */,
 				DE63CABF28944C8B001BEAF1 /* Resources */,
@@ -404,6 +411,7 @@
 				DE7AEDFD2899C9D700DF8F01 /* Tabbar */,
 				DE7AEDF62899BF1B00DF8F01 /* Menu */,
 				D7C6C6FA2394A6B0009E25EA /* Main */,
+				E01C5DFA28C908CA00033108 /* Details */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -451,6 +459,31 @@
 				DE7AEDFB2899C6B200DF8F01 /* SideMenuController+Extension.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E01C5DFA28C908CA00033108 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E01C5DFB28C908E500033108 /* DetailsViewController.swift */,
+				E01C5DFC28C908E500033108 /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E01C5DFF28C9128F00033108 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E01C5E0028C9129D00033108 /* Header */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E01C5E0028C9129D00033108 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E01C5E0128C912AF00033108 /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,6 +561,7 @@
 				D7BA3C74239121BC00D7854B /* Assets.xcassets in Resources */,
 				D7BA3C72239121BB00D7854B /* Main.storyboard in Resources */,
 				DE5E13E6289ED097000E9E60 /* Colors.xcassets in Resources */,
+				E01C5DFE28C908E500033108 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +663,7 @@
 				D7C6C7122394CE55009E25EA /* UITableView+Extension.swift in Sources */,
 				D7BA3C8A2391236D00D7854B /* String+Extension.swift in Sources */,
 				D7C6C7302394EAC7009E25EA /* CampaignEndPoint.swift in Sources */,
+				E01C5DFD28C908E500033108 /* DetailsViewController.swift in Sources */,
 				DEB11817289616FE00A47B2A /* UserServiceMock.swift in Sources */,
 				D7BA3C6B239121BB00D7854B /* AppDelegate.swift in Sources */,
 				DE63CAC428944ED8001BEAF1 /* R.generated.swift in Sources */,
@@ -637,6 +672,7 @@
 				DE5D13952895A5CB00A9EB08 /* UserTableViewCell.swift in Sources */,
 				D7C6C71E2394E32B009E25EA /* APIHeader.swift in Sources */,
 				D7C6C7272394E3D3009E25EA /* Ultilities.swift in Sources */,
+				E01C5E0228C912AF00033108 /* HeaderView.swift in Sources */,
 				06769AEA2488D7D700A43D99 /* AlertPresentable.swift in Sources */,
 				DE1CC52F28966BC40093304C /* PopupHelper.swift in Sources */,
 				DE1CC536289675C10093304C /* Storage.swift in Sources */,
@@ -954,8 +990,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lamnguyen1112/apiclient.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

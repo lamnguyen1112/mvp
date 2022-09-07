@@ -96,8 +96,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let viewController = UIViewController()
-    self.navigationController?.pushViewController(viewController, animated: true)
+//    let viewController = UIViewController()
+    let detailsVC = DetailsViewController.instanceFromNibClass()
+    self.navigationController?.pushViewController(detailsVC, animated: true)
   }
 }
 
@@ -118,7 +119,6 @@ extension MainViewController {
       return UITableViewCell()
     }
     cell.selectionStyle = .none
-    let address = Address()
     let user = users?[indexPath.row]
     cell.setUser(user)
     
