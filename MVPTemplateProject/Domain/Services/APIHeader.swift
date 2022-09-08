@@ -8,18 +8,20 @@
 
 import Foundation
 import Alamofire
+import UIKit
+import LNExtensions
 
 class APIHeader {
   
   static func normalHeader() -> HTTPHeaders {
-    return HTTPHeaders(["version": "\(Ultilities.appVersion())"])
+    return HTTPHeaders(["version": "\(UIApplication.appVersion)"])
   }
   
   static func headerWithToken() -> HTTPHeaders {
     guard let token = UserDefaultManager.shared.get(.token)
     else { return normalHeader() }
     return HTTPHeaders([
-      "version": "\(Ultilities.appVersion())",
+      "version": "\(UIApplication.appVersion)",
       "Authorization": token
     ])
   }
