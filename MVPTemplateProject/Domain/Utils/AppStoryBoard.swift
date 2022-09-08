@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LNExtensions
 
 enum AppStoryBoard: String {
   

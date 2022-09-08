@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LNExtensions
 
 class MainContainer {
   static func resolveViewController() -> MainViewController {

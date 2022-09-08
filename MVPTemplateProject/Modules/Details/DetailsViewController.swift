@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import LNExtensions
 
 class DetailsViewController: UIViewController {
   @IBOutlet weak var topConstraint: NSLayoutConstraint!
@@ -57,7 +58,7 @@ extension DetailsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: UIHostingCell<CellView>.defaultReuseIdentifier, for: indexPath) as! UIHostingCell<CellView>
+    let cell = tableView.dequeueReusableCell(withIdentifier: UIHostingCell<CellView>.reuseIdentifier, for: indexPath) as! UIHostingCell<CellView>
     cell.configure(CellView())
     cell.selectionStyle = .none
     

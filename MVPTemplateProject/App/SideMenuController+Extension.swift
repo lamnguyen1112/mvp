@@ -8,6 +8,7 @@
 
 import Foundation
 import SideMenuSwift
+import LNExtensions
 
 extension SideMenuController {
   convenience init() {

@@ -9,6 +9,7 @@
 import UIKit
 import SideMenuSwift
 import SwiftUI
+import LNExtensions
 
 protocol MainProtocol: BaseView {
   func requestError(_ msg: String, titleAlert: String?)
@@ -106,7 +107,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 extension MainViewController {
   typealias Address = User.Address
   func configureTitleSection(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.defaultReuseIdentifier, for: indexPath) as? TitleTableViewCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.reuseIdentifier, for: indexPath) as? TitleTableViewCell else {
       return UITableViewCell()
     }
     cell.selectionStyle = .none
@@ -115,7 +116,7 @@ extension MainViewController {
   }
   
   func configureUserSection(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.defaultReuseIdentifier, for: indexPath) as? UserTableViewCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.reuseIdentifier, for: indexPath) as? UserTableViewCell else {
       return UITableViewCell()
     }
     cell.selectionStyle = .none
