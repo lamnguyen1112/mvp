@@ -6,31 +6,31 @@
 //  Copyright © 2022 lazyman. All rights reserved.
 //
 
-import UIKit
-import SwiftUI
 import LNExtensions
+import SwiftUI
+import UIKit
 
 class DetailsViewController: UIViewController {
-  @IBOutlet weak var topConstraint: NSLayoutConstraint!
-  @IBOutlet private weak var tableView: UITableView!
-  
+  @IBOutlet var topConstraint: NSLayoutConstraint!
+  @IBOutlet private var tableView: UITableView!
+
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    self.navigationController?.isNavigationBarHidden = true
+    navigationController?.isNavigationBarHidden = true
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     inititalNavigationView()
     setupTableView()
   }
-  
+
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    self.navigationController?.isNavigationBarHidden = false
+    navigationController?.isNavigationBarHidden = false
   }
-  
+
   private func inititalNavigationView() {
     let headerView = HeaderView(title: "Details")
     let hostingViewController = UIHostingController(rootView: headerView)
@@ -38,7 +38,7 @@ class DetailsViewController: UIViewController {
     hostingViewController.view.backgroundColor = UIColor.red
     view.addSubview(hostingViewController.view)
   }
-  
+
   private func setupTableView() {
     topConstraint.constant = 60 + UIDevice.safeAreaInsets.top
 //    tableView.backgroundColor = R.color.background()
@@ -49,23 +49,21 @@ class DetailsViewController: UIViewController {
 }
 
 extension DetailsViewController: UITableViewDataSource {
-  func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
+  func numberOfSections(in _: UITableView) -> Int {
+    1
   }
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+
+  func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
+    10
   }
-  
+
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: UIHostingCell<CellView>.reuseIdentifier, for: indexPath) as! UIHostingCell<CellView>
     cell.configure(CellView())
     cell.selectionStyle = .none
-    
+
     return cell
   }
 }
 
-extension DetailsViewController: UITableViewDelegate {
-  
-}
+extension DetailsViewController: UITableViewDelegate {}

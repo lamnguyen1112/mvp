@@ -6,22 +6,23 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import Foundation
 import APlClient
+import Foundation
 
 protocol CampainServiceProtocol {
   func campain(_ limit: Int,
                lastKey: String,
-               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> ())
+               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> Void)
 }
 
 struct CampainService: CampainServiceProtocol {
   func campain(_ limit: Int,
                lastKey: String,
-               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> ()) {
+               completion: @escaping (_ obj: [CampaignInfo]?, _ error: Error?) -> Void)
+  {
     let router = Router<[CampaignInfo]>()
     let campainAPI = CampainEndPoint.campain(limit: limit, lastKey: lastKey)
-    router.request(campainAPI) { (responseObj, error, status) in
+    router.request(campainAPI) { responseObj, error, _ in
       completion(responseObj?.data, error)
     }
   }

@@ -6,9 +6,9 @@
 //  Copyright © 2022 lazyman. All rights reserved.
 //
 
-import Foundation
 import Alamofire
 import APlClient
+import Foundation
 
 enum UserEndPoint {
   case users
@@ -16,27 +16,26 @@ enum UserEndPoint {
 
 extension UserEndPoint: EndPointType {
   var baseURL: URL {
-    return Configuration.baseURL
+    Configuration.baseURL
   }
-  
+
   var path: String {
-    return "users"
+    "users"
   }
-  
+
   var httpMethod: HTTPMethod {
-    return .get
+    .get
   }
-  
+
   var headers: HTTPHeaders? {
-    return APIHeader.headerWithToken()
+    APIHeader.headerWithToken()
   }
-  
+
   var params: HTTPParameter? {
-    return nil
+    nil
   }
-  
+
   var paramType: ParameterType? {
-    return nil
+    nil
   }
-  
 }

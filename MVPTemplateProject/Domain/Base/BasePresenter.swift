@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol BasePresenter: AnyObject {
-  
-}
+protocol BasePresenter: AnyObject {}

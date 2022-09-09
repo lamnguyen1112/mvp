@@ -6,8 +6,8 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import UIKit
 import LNExtensions
+import UIKit
 
 class MainContainer {
   static func resolveViewController() -> MainViewController {

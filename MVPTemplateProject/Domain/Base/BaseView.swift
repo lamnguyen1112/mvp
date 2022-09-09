@@ -6,8 +6,8 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import UIKit
 import SVProgressHUD
+import UIKit
 
 protocol BaseView: AnyObject {
   func showProgress()
@@ -15,11 +15,10 @@ protocol BaseView: AnyObject {
 }
 
 extension BaseView {
-  
   func showProgress() {
     SVProgressHUD.show()
   }
-  
+
   func hideProgress() {
     SVProgressHUD.dismiss()
   }

@@ -24,7 +24,6 @@
 		D7C6C71E2394E32B009E25EA /* APIHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7182394E32B009E25EA /* APIHeader.swift */; };
 		D7C6C7232394E32B009E25EA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C71D2394E32B009E25EA /* Configuration.swift */; };
 		D7C6C7252394E371009E25EA /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7242394E371009E25EA /* UserDefaultManager.swift */; };
-		D7C6C72A2394E465009E25EA /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7292394E465009E25EA /* BaseModel.swift */; };
 		D7C6C72D2394EA79009E25EA /* CampainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C72C2394EA79009E25EA /* CampainService.swift */; };
 		D7C6C7302394EAC7009E25EA /* CampaignEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C72F2394EAC7009E25EA /* CampaignEndPoint.swift */; };
 		D7C6C7342394EB6D009E25EA /* CampaignInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6C7332394EB6D009E25EA /* CampaignInfo.swift */; };
@@ -87,7 +86,6 @@
 		D7C6C7182394E32B009E25EA /* APIHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHeader.swift; sourceTree = "<group>"; };
 		D7C6C71D2394E32B009E25EA /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D7C6C7242394E371009E25EA /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
-		D7C6C7292394E465009E25EA /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		D7C6C72C2394EA79009E25EA /* CampainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampainService.swift; sourceTree = "<group>"; };
 		D7C6C72F2394EAC7009E25EA /* CampaignEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignEndPoint.swift; sourceTree = "<group>"; };
 		D7C6C7332394EB6D009E25EA /* CampaignInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignInfo.swift; sourceTree = "<group>"; };
@@ -99,7 +97,7 @@
 		DE1CC535289675C10093304C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DE1CC538289676010093304C /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		DE3B2262289539AB00B4DF1F /* UserEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoint.swift; sourceTree = "<group>"; };
-		DE3B226528953E1E00B4DF1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE3B226528953E1E00B4DF1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; usesTabs = 1; };
 		DE3B22672895402D00B4DF1F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DE5D13932895A5CB00A9EB08 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		DE5E13E3289ED01B000E9E60 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 			children = (
 				DE3B226428953E0E00B4DF1F /* user */,
 				DE3B22602894E6EA00B4DF1F /* campain */,
-				D7C6C7292394E465009E25EA /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -649,7 +646,6 @@
 				DE7AEDFC2899C6B200DF8F01 /* SideMenuController+Extension.swift in Sources */,
 				E0F280CD28C9DCA300FB13BE /* FixedSafeAreaInsetsHostingViewController.swift in Sources */,
 				06769AEE2488E23900A43D99 /* Error+Extension.swift in Sources */,
-				D7C6C72A2394E465009E25EA /* BaseModel.swift in Sources */,
 				DE3B226628953E1E00B4DF1F /* User.swift in Sources */,
 				E02A604228C9E38700F02F8E /* Extension++.swift in Sources */,
 				D7BA3C842391223800D7854B /* Global.swift in Sources */,

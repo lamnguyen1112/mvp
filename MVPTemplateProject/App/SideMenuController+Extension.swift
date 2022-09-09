@@ -7,24 +7,23 @@
 //
 
 import Foundation
-import SideMenuSwift
 import LNExtensions
+import SideMenuSwift
 
 extension SideMenuController {
   convenience init() {
     let menuViewController = MenuViewController.instanceFromNibClass()
     let tabbarViewController = TabBarViewController()
     self.init(contentViewController: tabbarViewController, menuViewController: menuViewController)
-    
+
     setupSideMenu()
   }
-  
+
   private func setupSideMenu() {
     SideMenuController.preferences.basic.menuWidth = UIScreen.width - 100
     SideMenuController.preferences.basic.direction = .left
     SideMenuController.preferences.basic.enablePanGesture = false
     SideMenuController.preferences.basic.supportedOrientations = .portrait
     SideMenuController.preferences.basic.shouldRespectLanguageDirection = true
-
   }
 }

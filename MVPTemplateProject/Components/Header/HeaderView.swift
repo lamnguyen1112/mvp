@@ -12,11 +12,11 @@ struct HeaderView: View {
   var title: String = ""
   var leftHandler: (() -> Void)?
   var rightHandler: (() -> Void)?
-  
+
   var body: some View {
-    ZStack() {
+    ZStack {
       Color(UIColor.red)
-      HStack() {
+      HStack {
         leftButton
         Spacer()
         titleView
@@ -26,7 +26,7 @@ struct HeaderView: View {
     }
     .padding(.top, UIDevice.safeAreaInsets.top)
   }
-  
+
   private var leftButton: some View {
     Button(action: {
       leftHandler?()
@@ -38,12 +38,12 @@ struct HeaderView: View {
         .foregroundColor(Color.white)
     }
   }
-  
+
   private var titleView: some View {
     Text(title).foregroundColor(Color.white)
       .font(Font.title3).bold()
   }
-  
+
   private var rightButton: some View {
     Button(action: {
       rightHandler?()

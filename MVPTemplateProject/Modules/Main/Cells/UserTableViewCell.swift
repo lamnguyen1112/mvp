@@ -9,20 +9,18 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-  
-  @IBOutlet private weak var userIDLbl: UILabel!
-  @IBOutlet private weak var userNameLbl: UILabel!
-  
+  @IBOutlet private var userIDLbl: UILabel!
+  @IBOutlet private var userNameLbl: UILabel!
+
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
   }
-  
+
   override func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(selected, animated: animated)
     // Configure the view for the selected state
   }
-  
 }
 
 extension UserTableViewCell {

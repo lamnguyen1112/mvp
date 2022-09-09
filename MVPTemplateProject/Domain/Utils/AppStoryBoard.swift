@@ -6,17 +6,16 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import UIKit
 import LNExtensions
+import UIKit
 
 enum AppStoryBoard: String {
-  
   case main = "Main"
-  
+
   var instance: UIStoryboard {
-    return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
+    UIStoryboard(name: rawValue, bundle: Bundle.main)
   }
-  
+
   func viewController<T: UIViewController>(viewControllerClass: T.Type) -> T {
     let storyboardId = (viewControllerClass as UIViewController.Type).storyboardID
     if #available(iOS 13.0, *) {
@@ -26,9 +25,7 @@ enum AppStoryBoard: String {
       return instance.instantiateViewController(withIdentifier: storyboardId) as! T
     }
   }
-  
 }
 
 // USAGE :
 // let storyboard = AppStoryboard.Main.instance
-

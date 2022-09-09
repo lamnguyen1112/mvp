@@ -13,27 +13,26 @@ protocol MainPresenterProtocol {
 }
 
 class MainPresenter: MainPresenterProtocol {
-  
   weak var viewController: MainProtocol?
   private let userService: UserServiceProtocol = UserServiceMock()
-  private var userTask: Task<(), Never>?
-  
+  private var userTask: Task<Void, Never>?
+
   func getUsers() {
-    userTask = Task() {
+    userTask = Task {
       let (users, _) = await userService.getUsers()
-      
+
       await MainActor.run(body: {
         self.viewController?.reloadListUser(users)
       })
     }
   }
-  
-//  func oldVersionGetUsers() {
+
+  //  func oldVersionGetUsers() {
 //      userService.getUsers(completion: { users, error in
 //        self.viewController?.reloadListUser(users)
 //      })
-//  }
-  
+  //  }
+
   deinit {
     userTask?.cancel()
   }

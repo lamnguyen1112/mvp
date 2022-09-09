@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct CellView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        .padding(.vertical, 20)
-    }
+  var body: some View {
+    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      .padding(.vertical, 20)
+  }
 }
 
 struct CellView_Previews: PreviewProvider {
-    static var previews: some View {
-        CellView()
-    }
+  static var previews: some View {
+    CellView()
+  }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HelloView: View {
   var body: some View {
-    VStack() {
+    VStack {
       Text("Hello, World!")
     }
     .background(Color(R.color.background()!))

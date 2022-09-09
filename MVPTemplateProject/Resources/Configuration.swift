@@ -12,21 +12,21 @@ enum Configuration: String {
   case dev
   case staging
   case release
-  
+
   static let current: Configuration = {
     guard let rawValue = Bundle.main.infoDictionary?["Configuration"] as? String else {
       fatalError("No Configuration Found")
     }
-    
+
     guard let configuration = Configuration(rawValue: rawValue.lowercased()) else {
       fatalError("Invalid Configuration")
     }
-    
+
     return configuration
   }()
-  
+
   // MARK: - Base URL
-  
+
   static var baseURL: URL {
     switch current {
     case .dev:
@@ -37,12 +37,12 @@ enum Configuration: String {
       return URL(string: "https://mrlazy.template.com")!
     }
   }
-  
+
   static var isUsingMock: Bool {
-    #if !(APPSTORE)
-    return UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
+    #if !APPSTORE
+      return UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
     #else
-    return false
+      return false
     #endif
   }
 }

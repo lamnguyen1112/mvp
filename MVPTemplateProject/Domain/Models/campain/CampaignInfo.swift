@@ -17,27 +17,23 @@ struct CampaignInfo: Decodable {
   var startDate: String?
   var target: String?
   var endDate: String?
-  
+
   var isImage: Bool? {
-    get {
-      if let empty = bannerUrl?.trimmingCharacters(in: .whitespaces).isEmpty {
-        if empty {
-          return false
-        }
-        
-        return true
+    if let empty = bannerUrl?.trimmingCharacters(in: .whitespaces).isEmpty {
+      if empty {
+        return false
       }
-      
-      return false
+
+      return true
     }
+
+    return false
   }
-  
+
   var type: CampaignType? {
-    get {
-      guard let typeStr = transitionType?.lowercased() ,
-            let typ = CampaignType(rawValue: typeStr) else { return CampaignType.none }
-      return typ
-    }
+    guard let typeStr = transitionType?.lowercased(),
+          let typ = CampaignType(rawValue: typeStr) else { return CampaignType.none }
+    return typ
   }
 }
 

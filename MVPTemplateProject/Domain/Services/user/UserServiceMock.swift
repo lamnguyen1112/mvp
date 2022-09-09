@@ -6,12 +6,13 @@
 //  Copyright © 2022 lazyman. All rights reserved.
 //
 
+import APlClient
 import Foundation
 
 struct UserServiceMock: UserServiceProtocol {
   func getUsers() async -> ([User]?, Error?) {
     try? await Task.sleep(nanoseconds: 2_000_000_000)
-    
+
     guard let url = Bundle.main.url(forResource: "UsersMock", withExtension: "json"),
           let data = try? Data(contentsOf: url)
     else {

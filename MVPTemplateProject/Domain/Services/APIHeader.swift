@@ -6,23 +6,22 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import Foundation
 import Alamofire
-import UIKit
+import Foundation
 import LNExtensions
+import UIKit
 
 class APIHeader {
-  
   static func normalHeader() -> HTTPHeaders {
-    return HTTPHeaders(["version": "\(UIApplication.appVersion)"])
+    HTTPHeaders(["version": "\(UIApplication.appVersion)"])
   }
-  
+
   static func headerWithToken() -> HTTPHeaders {
     guard let token = UserDefaultManager.shared.get(.token)
     else { return normalHeader() }
     return HTTPHeaders([
       "version": "\(UIApplication.appVersion)",
-      "Authorization": token
+      "Authorization": token,
     ])
   }
 }

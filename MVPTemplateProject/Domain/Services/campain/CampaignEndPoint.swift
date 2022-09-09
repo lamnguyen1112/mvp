@@ -6,9 +6,9 @@
 //  Copyright © 2019 lazyman. All rights reserved.
 //
 
-import Foundation
 import Alamofire
 import APlClient
+import Foundation
 
 enum CampainEndPoint {
   case campain(limit: Int, lastKey: String)
@@ -16,35 +16,34 @@ enum CampainEndPoint {
 
 extension CampainEndPoint: EndPointType {
   var baseURL: URL {
-    return Configuration.baseURL
+    Configuration.baseURL
   }
-  
+
   var path: String {
     switch self {
-    case .campain( _, _):
+    case .campain:
       return "/server/v1/campaigns"
     }
   }
-  
+
   var httpMethod: HTTPMethod {
-    return .post
+    .post
   }
-  
+
   var headers: HTTPHeaders? {
-    return APIHeader.headerWithToken()
+    APIHeader.headerWithToken()
   }
-  
+
   var params: HTTPParameter? {
     switch self {
-    case .campain( _, _):
+    case .campain:
       return nil
     }
-    
   }
-  
+
   var paramType: ParameterType? {
     switch self {
-    case .campain(_, _):
+    case .campain:
       return .body
     }
   }

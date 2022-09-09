@@ -7,7 +7,7 @@
 //
 
 import UIKit
-#if !(APPSTORE)
+#if !APPSTORE
   import DBDebugToolkit
 #endif
 import SideMenuSwift
@@ -15,13 +15,13 @@ import SideMenuSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   internal var window: UIWindow?
-  
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+  func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     AppData.token = "Testing Token"
     setupWindow()
     setupDBToolKit()
-    
+
     return true
   }
 }
@@ -32,24 +32,24 @@ extension AppDelegate {
     window?.rootViewController = SideMenuController()
     window?.makeKeyAndVisible()
   }
-  
+
   private func setupDBToolKit() {
-    #if !(APPSTORE)
-    UserDefaults.standard.set(true, forKey: UserDefaultKey.isUsingMock.rawValue)
-    DBDebugToolkit.setup()
-    DBDebugToolkit.setupCrashReporting()
-    
-    let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
-    let valUseMock = DBCustomVariable(name: "Using mock", value: isUsingMock)
-    valUseMock.addTarget(self, action: #selector(changeUsingMockConfig))
-    DBDebugToolkit.add(valUseMock)
+    #if !APPSTORE
+      UserDefaults.standard.set(true, forKey: UserDefaultKey.isUsingMock.rawValue)
+      DBDebugToolkit.setup()
+      DBDebugToolkit.setupCrashReporting()
+
+      let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
+      let valUseMock = DBCustomVariable(name: "Using mock", value: isUsingMock)
+      valUseMock.addTarget(self, action: #selector(changeUsingMockConfig))
+      DBDebugToolkit.add(valUseMock)
     #endif
   }
-  
+
   @objc private func changeUsingMockConfig() {
-    #if !(APPSTORE)
-    let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
-    UserDefaults.standard.set(!isUsingMock, forKey: UserDefaultKey.isUsingMock.rawValue)
+    #if !APPSTORE
+      let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
+      UserDefaults.standard.set(!isUsingMock, forKey: UserDefaultKey.isUsingMock.rawValue)
     #endif
   }
 }

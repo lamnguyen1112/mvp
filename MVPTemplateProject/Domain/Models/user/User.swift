@@ -16,7 +16,7 @@ struct User: Decodable {
 
 extension User: CustomDebugStringConvertible {
   var debugDescription: String {
-    return "\(userId ?? 0) \(name ?? "")"
+    "\(userId ?? 0) \(name ?? "")"
   }
 }
 

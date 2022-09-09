@@ -12,9 +12,9 @@ public protocol ReusableView: AnyObject {
   static var defaultReuseIdentifier: String { get }
 }
 
-extension ReusableView where Self: UIView {
-  public static var defaultReuseIdentifier: String {
-    return String(describing: self)
+public extension ReusableView where Self: UIView {
+  static var defaultReuseIdentifier: String {
+    String(describing: self)
   }
 }
 
@@ -24,6 +24,6 @@ public protocol NibLoadableView: AnyObject {
 
 extension NibLoadableView where Self: UIView {
   static var nibName: String {
-    return String(describing: self)
+    String(describing: self)
   }
 }
