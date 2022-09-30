@@ -19,7 +19,7 @@ platform :ios do
   desc "Run cocoapods"
   lane :upload_app_to_test_flight do
     # add actions here: https://docs.fastlane.tools/actions
-    cocoapods
+    cocoapods(use_bundle_exec: false)
     puts "Build apps"
   end
 end
