@@ -16,10 +16,51 @@
 default_platform(:ios)
 
 platform :ios do
+
+  before_all do |lane, options|
+  	cocoapods
+  end
+  
   desc "Run cocoapods"
   lane :upload_app_to_test_flight do
     # add actions here: https://docs.fastlane.tools/actions
-    cocoapods(use_bundle_exec: false)
-    puts "Build apps"
+    UI.message("Build apps")
+  end
+  
+  desc "Test Fastlane"
+  lane :test_fastlane_script do
+# 	identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+#   	appleId = CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
+#   	UI.message("Neutral message (usually white)" + identifier)
+#   	
+#   	UI.message("Neutral message (usually white)")
+# 	UI.success("Successfully finished processing (usually green)")
+# 	UI.error("Wahaha, what's going on here! (usually red)")
+# 	UI.important("Make sure to use Windows (usually yellow)")
+# 	UI.header("Inputs") # a big box
+# 	
+# 	name = UI.input("What's your name? ")
+# 	if UI.confirm("Are you '#{name}'?")
+#   		UI.success("Oh yeah")
+# 	else
+#   		UI.error("Wups, invalid")
+# 	end
+# 	
+# 	###### A "Dropdown" for the user
+# 	project = UI.select("Select your project: ", ["Test Project", "Test Workspace"])
+# 
+# 	UI.success("Okay #{name}, you selected '#{project}'")
+# 	
+# 	###### To run a command use
+# 	FastlaneCore::CommandExecutor.execute(command: "ls",
+#                                     	print_all: true,
+#                                         	error: proc do |error_output|
+#                                           # handle error here
+#                                         end)
+
+#   	puts identifier
+#   	puts appleId
+	lane_name = lane_context[SharedValues::LANE_NAME]
+	UI.message(lane_name)
   end
 end
