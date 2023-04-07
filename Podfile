@@ -12,7 +12,7 @@ target 'MVPTemplateProject' do
   pod 'SVProgressHUD', '~> 2.2'
   pod 'Kingfisher'
   pod 'R.swift'
-  pod 'DBDebugToolkit', '~> 0.8.0'
+  pod "DBDebugToolkit", '~> 0.8.0', :configurations => ['dev', 'staging']
   pod 'SwiftEntryKit'
   pod 'SideMenuSwift'
 
