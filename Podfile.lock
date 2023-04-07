@@ -3,7 +3,6 @@ PODS:
   - Kingfisher (7.6.2)
   - R.swift (7.3.0)
   - SideMenuSwift (2.0.9)
-  - SVProgressHUD (2.2.5)
   - SwiftEntryKit (2.0.0)
   - SwiftLint (0.51.0)
 
@@ -12,7 +11,6 @@ DEPENDENCIES:
   - Kingfisher
   - R.swift
   - SideMenuSwift
-  - SVProgressHUD (~> 2.2)
   - SwiftEntryKit
   - SwiftLint
 
@@ -22,7 +20,6 @@ SPEC REPOS:
     - Kingfisher
     - R.swift
     - SideMenuSwift
-    - SVProgressHUD
     - SwiftEntryKit
     - SwiftLint
 
@@ -31,10 +28,9 @@ SPEC CHECKSUMS:
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
   R.swift: cef1c530541cb49412752721797f10dae6b32d11
   SideMenuSwift: 39f1922e225da4aaa8b16591037a929defe960c9
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
 
-PODFILE CHECKSUM: b5e14ab36596995c9fd387ca9fecb40e185886d5
+PODFILE CHECKSUM: bba50752b3dafdf70caff02401e1dd6c5d75c0de
 
 COCOAPODS: 1.11.3

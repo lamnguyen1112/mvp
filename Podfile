@@ -9,7 +9,7 @@ target 'MVPTemplateProject' do
 
   # Pods for MVPTemplateProject
   pod 'SwiftLint'
-  pod 'SVProgressHUD', '~> 2.2'
+#  pod 'SVProgressHUD', '~> 2.2'
   pod 'Kingfisher'
   pod 'R.swift'
   pod "DBDebugToolkit", '~> 0.8.0', :configurations => ['dev', 'staging']
