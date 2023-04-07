@@ -747,6 +747,7 @@
 			baseConfigurationReference = F20B05C84CC7F9449F8FC4CE /* Pods-MVPTemplateProject.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
@@ -885,6 +886,7 @@
 			baseConfigurationReference = ECC43B98F88C7936379C68C6 /* Pods-MVPTemplateProject.dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
@@ -905,6 +907,7 @@
 			baseConfigurationReference = 9CCEA095552AAE59C19E251F /* Pods-MVPTemplateProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JXXU95XBT;
 				INFOPLIST_FILE = MVPTemplateProject/Info.plist;
