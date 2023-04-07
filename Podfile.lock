@@ -1,5 +1,4 @@
 PODS:
-  - DBDebugToolkit (0.8.0)
   - Kingfisher (7.6.2)
   - R.swift (7.3.0)
   - SideMenuSwift (2.0.9)
@@ -7,7 +6,6 @@ PODS:
   - SwiftLint (0.51.0)
 
 DEPENDENCIES:
-  - DBDebugToolkit (~> 0.8.0)
   - Kingfisher
   - R.swift
   - SideMenuSwift
@@ -16,7 +14,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - DBDebugToolkit
     - Kingfisher
     - R.swift
     - SideMenuSwift
@@ -24,13 +21,12 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  DBDebugToolkit: 53481af73b1c1249d341bc33a9aa69d32ce5e24b
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
   R.swift: cef1c530541cb49412752721797f10dae6b32d11
   SideMenuSwift: 39f1922e225da4aaa8b16591037a929defe960c9
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
 
-PODFILE CHECKSUM: bba50752b3dafdf70caff02401e1dd6c5d75c0de
+PODFILE CHECKSUM: 396db82ab098f0438c4f74cfd1aaa201d3794494
 
 COCOAPODS: 1.11.3

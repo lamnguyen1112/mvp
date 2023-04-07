@@ -1,6 +1,16 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+def common_pod
+  pod 'SwiftLint'
+  pod 'SwiftLint'
+#  pod 'SVProgressHUD', '~> 2.2'
+  pod 'Kingfisher'
+  pod 'R.swift'
+  pod 'SwiftEntryKit'
+  pod 'SideMenuSwift'
+end
+
 target 'MVPTemplateProject' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -8,12 +18,7 @@ target 'MVPTemplateProject' do
   inhibit_all_warnings!
 
   # Pods for MVPTemplateProject
-  pod 'SwiftLint'
-#  pod 'SVProgressHUD', '~> 2.2'
-  pod 'Kingfisher'
-  pod 'R.swift'
-  pod "DBDebugToolkit", '~> 0.8.0', :configurations => ['dev', 'staging']
-  pod 'SwiftEntryKit'
-  pod 'SideMenuSwift'
+  common_pod
+  pod "DBDebugToolkit"
 
 end
