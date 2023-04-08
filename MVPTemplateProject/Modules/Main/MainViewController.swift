@@ -40,6 +40,7 @@ class MainViewController: BaseViewController {
     if let token = AppData.token {
       print(token)
     }
+    print("testing....!")
   }
 }
 
