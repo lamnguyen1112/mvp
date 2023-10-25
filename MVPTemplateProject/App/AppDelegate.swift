@@ -27,12 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
+
+  /// setup window
   private func setupWindow() {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.rootViewController = SideMenuController()
     window?.makeKeyAndVisible()
   }
-
+  
+  /// setup debug toolkit
   private func setupDBToolKit() {
     #if !APPSTORE
       UserDefaults.standard.set(true, forKey: UserDefaultKey.isUsingMock.rawValue)
@@ -45,7 +48,8 @@ extension AppDelegate {
       DBDebugToolkit.add(valUseMock)
     #endif
   }
-
+  
+  /// change using mock configure
   @objc private func changeUsingMockConfig() {
     #if !APPSTORE
       let isUsingMock = UserDefaults.standard.bool(forKey: UserDefaultKey.isUsingMock.rawValue)
