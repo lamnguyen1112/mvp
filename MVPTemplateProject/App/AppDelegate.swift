@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     AppData.token = "Testing Token"
     setupWindow()
-    setupDBToolKit()
+//    setupDBToolKit()
 
     return true
   }
